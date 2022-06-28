@@ -4,6 +4,15 @@ import ResepBakso from '../scripts/ResepBakso'
 import ResepHelper from '../scripts/ResepHelper'
 
 class MenuCard extends React.Component {
+  capitalizeHyphens(string) {
+    return string
+      .split('-')
+      .map((word) => {
+        return word.charAt(0).toUpperCase() + word.slice(1)
+      })
+      .join('-')
+  }
+
   render() {
     this.menu = this.props.menu
     const caption = `${this.menu.name} - ${ResepHelper.displayPrice(
@@ -12,7 +21,7 @@ class MenuCard extends React.Component {
     return (
       <div className='table--cell card card-recipe'>
         <img
-          src={`./assets/bakso/${this.menu.id}.png`}
+          src={`./assets/bakso/${this.capitalizeHyphens(this.menu.id)}.png`}
           alt={caption}
           title={caption}
         ></img>
