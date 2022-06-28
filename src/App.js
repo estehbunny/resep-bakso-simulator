@@ -2,20 +2,12 @@ import React from 'react'
 import './App.css'
 
 import BigIngredientCard from './components/BigIngredientCard'
-import RecipeCard from './components/RecipeCard'
+import RecipeList from './components/RecipeList'
 import VersionInfo from './components/VersionInfo'
 
 import ResepBakso from './scripts/ResepBakso'
 import BahanBakso from './data/bahan.json'
 import GameVersion from './data/gameVersion.json'
-
-class RecipeList extends React.Component {
-  render() {
-    return this.props.recipes.map((element) => {
-      return <RecipeCard item={element} key={element.id} />
-    })
-  }
-}
 
 const SiteArtwork = () => {
   return (
@@ -37,6 +29,48 @@ const CopyrightInfo = () => {
       <br />
       untuk referensi game <strong>Bakso Simulator</strong>.
     </div>
+  )
+}
+
+const SiteHeader = () => {
+  return (
+    <header className='App-header'>
+      <h1>Resep Bakso Simulator</h1>
+      <p>Selamat datang di Resep Bakso Simulator 👋</p>
+    </header>
+  )
+}
+
+const RecipesSection = (props) => {
+  return (
+    <section id='recipes-section'>
+      <h3>Daftar Menu</h3>
+      <div id='recipe'>
+        <RecipeList recipes={props.recipes} />
+      </div>
+    </section>
+  )
+}
+
+const IngredientsSection = () => {
+  return (
+    <section id='ingredients-section'>
+      <h3>Daftar Bahan</h3>
+      <div id='ingredient' className='assorted-bigcard'>
+        {BahanBakso.map((element) => {
+          return <BigIngredientCard item={element} key={element.id} />
+        })}
+      </div>
+    </section>
+  )
+}
+
+const SiteFooter = () => {
+  return (
+    <footer>
+      <SiteArtwork />
+      <CopyrightInfo />
+    </footer>
   )
 }
 
@@ -79,44 +113,37 @@ class App extends React.Component {
     )
   }
 
-  render() {
+  generatePlatformSection() {
     let devType = GameVersion.platforms.find((e) =>
       this.matchSelectedPlatform(e)
     )
     return (
-      <div className='App'>
-        <header className='App-header'>
-          <h1>Resep Bakso Simulator</h1>
-          <p>Selamat datang di Resep Bakso Simulator 👋</p>
-        </header>
-        <main>
-          <h3>Platform List</h3>
-          <div id='platforms'>
-            <div className='assorted-bigcard'>
-              {GameVersion.platforms.map((platform) => {
-                return this.renderVersionInfo(platform)
-              })}
-            </div>
-            <div>
-              Using <strong>{devType.name}</strong> version of Bakso Simulator
-            </div>
-          </div>
-          <h3>Daftar Bahan</h3>
-          <div id='ingredient' className='assorted-bigcard'>
-            {BahanBakso.map((element) => {
-              return <BigIngredientCard item={element} key={element.id} />
+      <section id='platforms-section'>
+        <h3>Platform List</h3>
+        <div id='platforms'>
+          <div className='assorted-bigcard'>
+            {GameVersion.platforms.map((platform) => {
+              return this.renderVersionInfo(platform)
             })}
           </div>
-
-          <h3>Daftar Menu</h3>
-          <div id='recipe'>
-            <RecipeList recipes={this.state.helperObject.getAll()} />
+          <div>
+            Using <strong>{devType.name}</strong> version of Bakso Simulator
           </div>
+        </div>
+      </section>
+    )
+  }
+
+  render() {
+    return (
+      <div className='App'>
+        <SiteHeader />
+        <main>
+          {this.generatePlatformSection()}
+          <IngredientsSection/>
+          <RecipesSection recipes={this.state.helperObject.getAll()}/>
         </main>
-        <footer>
-          <SiteArtwork />
-          <CopyrightInfo />
-        </footer>
+        <SiteFooter />
       </div>
     )
   }
