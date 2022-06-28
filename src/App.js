@@ -7,7 +7,7 @@ import VersionInfo from './components/VersionInfo'
 
 import ResepBakso from './scripts/ResepBakso'
 import BahanBakso from './data/bahan.json'
-import AppVersion from './data/appVersion.json'
+import GameVersion from './data/gameVersion.json'
 
 class RecipeList extends React.Component {
   render() {
@@ -80,7 +80,7 @@ class App extends React.Component {
   }
 
   render() {
-    let devType = AppVersion.platforms.find((e) =>
+    let devType = GameVersion.platforms.find((e) =>
       this.matchSelectedPlatform(e)
     )
     return (
@@ -93,7 +93,7 @@ class App extends React.Component {
           <h3>Platform List</h3>
           <div id='platforms'>
             <div className='assorted-bigcard'>
-              {AppVersion.platforms.map((platform) => {
+              {GameVersion.platforms.map((platform) => {
                 return this.renderVersionInfo(platform)
               })}
             </div>
