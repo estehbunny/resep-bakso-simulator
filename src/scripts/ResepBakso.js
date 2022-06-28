@@ -1,7 +1,7 @@
-import Bakso from "./data/bakso.json"
-import Bahan from "./data/bahan.json"
+import Bakso from '../data/bakso.json'
+import Bahan from '../data/bahan.json'
 
-import BaksoMobile from "./data/mobile/bakso.json"
+import BaksoMobile from '../data/mobile/bakso.json'
 
 class ResepBakso {
   constructor(isMobile) {
@@ -12,7 +12,7 @@ class ResepBakso {
     let ingredient = Bahan.find((element) => {
       return element.id === ingredientId
     })
-    return ingredient.price / ingredient.amount * amount
+    return (ingredient.price / ingredient.amount) * amount
   }
 
   estimateRecipeCost(baksoId) {
@@ -22,7 +22,7 @@ class ResepBakso {
     let totalPrice = 0
     bakso.recipe.forEach((element) => {
       totalPrice += ResepBakso.getIngredientPrice(element.id, element.amount)
-    });
+    })
     return totalPrice
   }
 

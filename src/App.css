@@ -56,7 +56,9 @@ body {
 }
 
 .card-ingredient>img {
-  max-height: 4rem;
+  height: 5rem;
+  max-width: 5rem;
+  object-fit: contain;
 }
 
 .card-ingredient-title {

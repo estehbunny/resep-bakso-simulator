@@ -1,0 +1,23 @@
+{
+  "latestVersion": "0.4",
+  "platforms": [
+    {
+      "id": "steam",
+      "name": "Steam (PC)",
+      "version": "0.4",
+      "releaseDate": "2022-06-25"
+    },
+    {
+      "id": "ios",
+      "name":"iOS",
+      "version": "0.3",
+      "releaseDate": "2022-06-21"
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "version": "0.3",
+      "releaseDate": "2022-06-23"
+    }
+  ]
+}
