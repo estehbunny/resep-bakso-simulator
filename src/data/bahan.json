@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bakso",
+    "name": "Bakso",
+    "price": "25000",
+    "amount": 25,
+    "availability": "Supermarket"
+  },
+  {
+    "id": "bumbu",
+    "name": "Bumbu Masak",
+    "price": "10000",
+    "amount": 25,
+    "availability": "Supermarket"
+  },
+  {
+    "id": "sayuran",
+    "name": "Sayur-sayuran",
+    "price": "15000",
+    "amount": 25,
+    "availability": "Supermarket"
+  },
+  {
+    "id": "cabe",
+    "name": "Cabe",
+    "price": "17500",
+    "amount": 25,
+    "availability": "Supermarket"
+  },
+  {
+    "id": "mie-bihun",
+    "name": "Mie dan Bihun",
+    "price": "12500",
+    "amount": 25,
+    "availability": "Supermarket"
+  }
+]

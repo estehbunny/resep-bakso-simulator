@@ -1,38 +1,296 @@
-.App {
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table {
+  border: 1px solid white;
+  margin: 1.5rem auto;
+  width: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table--inner {
+  display: table;
 }
 
-.App-header {
-  background-color: #282c34;
+.table--row {
+  display: table-row;
+  border: 1px solid white;
+}
+
+.table--row__info {
+  padding: .5em;
+}
+
+.table--cell {
+  display: table-cell;
+  border: 1px solid white;
+  padding: 0.5em 0rem;
+}
+
+.table--column {
+  display: table-column;
+  border: 1px solid white;
+}
+
+.card {
+  width: 8rem;
+  vertical-align: middle;
+}
+
+.cell-follow {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.card--cell {
+  padding: .5rem 0rem;
+}
+
+.card--cell__border {
+  padding: 0.5rem 0rem;
+  border: 1px solid white;
+}
+
+.card-ingredient {
+  width: 4rem;
+}
+
+.card-ingredient>img {
+  max-height: 4rem;
+}
+
+.card-ingredient-title {
+  font-size: 1.2em;
+}
+
+.card-ingredient-info {
+  font-size: .8em;
+}
+
+.card-ingredient-art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10rem;
+  height: 8rem;
+}
+
+.card-recipe {
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.card-recipe>img {
+  height: 5rem;
+  max-width: 5rem;
+  object-fit: contain;
+}
+
+.assorted-bigcard {
+  display: inline-flex;
+  margin: 0rem .5rem;
+}
+
+.bigcard {
+  margin: 1rem .5rem;
+  padding: 1rem;
+  border: 1px solid white;
+  box-shadow: .2rem .2rem #99999980;
+  background-color: #305F4B;
+}
+
+.bigcard:hover {
+  box-shadow: .3rem .3rem #99999980;
+  background-color: #3E7A60;
+  margin: .9rem .6rem;
+}
+
+.bigcard:active,
+.bigcard:checked,
+.bigcard--selected {
+  box-shadow: .2rem .2rem #99999980;
+  border-width: 2px;
+  background-color: #503c50;
+  margin: .9rem .6rem;
+}
+
+.bigcard--ingredient {
+  display: flex;
+  padding: 0rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-fanart>img {
+  max-height: 420px;
+  max-width: 80%;
+}
+
+.hidden-radio {
+  display: none;
+}
+
+body {
+  background-color: #234537;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  font-size: 1.2em;
+  margin: 3rem auto 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 899px) {
+  body {
+    font-size: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bigcard,
+  .bigcard:hover,
+  .bigcard:active,
+  .bigcard:checked,
+  .bigcard--selected {
+    margin: .5rem .5rem;
+    padding: .5rem;
+  }
+
+  .bigcard--version {
+    font-size: .8em;
+  }
+
+  .card-ingredient-art {
+    width: 5em;
+    height: 5em;
+    border: 0px;
+  }
+
+  .card-ingredient-art img {
+    max-width: 5em;
+  }
+
+  .card-ingredient-title {
+    font-size: 1em;
+    height: 2.5em;
+  }
+
+  .card-recipe {
+    font-size: .8em;
+    padding: .3rem;
+  }
+
+  .card-recipe>img {
+    max-height: 4.5em;
+  }
+
+  .card-ingredient>img {
+    height: 4em;
+    max-width: 4em;
+    object-fit: contain;
+  }
+
+  .card--cell {
+    padding: .3rem 0rem;
+  }
+
+  .card {
+    width: 5rem;
+  }
+
+  .cell-follow {
+    padding: .5em;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  body {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  body {
+    font-size: .7rem;
+  }
+
+  .bigcard,
+  .bigcard:hover,
+  .bigcard:active,
+  .bigcard:checked,
+  .bigcard--selected {
+    padding: .4rem;
+    margin: .5rem .2rem;
+  }
+
+  .bigcard,
+  .bigcard:active,
+  .bigcard:checked,
+  .bigcard--selected,
+  .bigcard:hover {
+    border-width: 1px;
+    box-shadow: .2rem .2rem #99999980;
+  }
+
+  .bigcard--version {
+    font-size: .8em;
+  }
+
+  .card-ingredient>.card-ingredient-info {
+    margin: auto;
+  }
+
+  .card-ingredient-art img {
+    max-width: 3rem;
+  }
+
+  .card-ingredient>img {
+    height: 4em;
+    max-width: 4em;
+    object-fit: contain;
+  }
+
+  .card {
+    width: 5em;
+  }
+
+  .footer-fanart>img {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    font-size: .6rem;
+    overflow-x: hidden;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .assorted-bigcard {
+    margin: 0;
+  }
+
+  .bigcard,
+  .bigcard:hover,
+  .bigcard:active,
+  .bigcard:checked,
+  .bigcard--selected {
+    padding: .4rem;
+    margin: .5rem .1rem;
+  }
+
+  .bigcard,
+  .bigcard:active,
+  .bigcard:checked,
+  .bigcard--selected,
+  .bigcard:hover {
+    box-shadow: none;
+  }
+
+  footer {
+    font-size: 1em;
   }
 }

@@ -1,0 +1,176 @@
+[
+  {
+    "id": "bakso-original",
+    "name": "Bakso Original",
+    "recipe_source": "-",
+    "recipe_price": 0,
+    "sell_price": 15000,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 2
+      },
+      {
+        "id": "cabe",
+        "amount": 1
+      },
+      {
+        "id": "sayuran",
+        "amount": 1
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 1
+      },
+      {
+        "id": "bumbu",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "bakso-pedas",
+    "name": "Bakso Pedas",
+    "recipe_source": "Les Masak",
+    "recipe_price": 1000000,
+    "sell_price": 55000,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 2
+      },
+      {
+        "id": "cabe",
+        "amount": 4
+      },
+      {
+        "id": "sayuran",
+        "amount": 2
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 2
+      },
+      {
+        "id": "bumbu",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "bakso-bakso",
+    "name": "Bakso Bakso",
+    "recipe_source": "Les Masak",
+    "recipe_price": 1500000,
+    "sell_price": 42500,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 6
+      },
+      {
+        "id": "cabe",
+        "amount": 0
+      },
+      {
+        "id": "sayuran",
+        "amount": 0
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 0
+      },
+      {
+        "id": "bumbu",
+        "amount": 0
+      }
+    ]
+  },
+  {
+    "id": "bakso-vege",
+    "name": "Bakso Vegetarian",
+    "recipe_source": "Les Masak",
+    "recipe_price": 1250000,
+    "sell_price": 45000,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 0
+      },
+      {
+        "id": "cabe",
+        "amount": 2
+      },
+      {
+        "id": "sayuran",
+        "amount": 6
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 1
+      },
+      {
+        "id": "bumbu",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "bakso-mie",
+    "name": "Mie Bakso",
+    "recipe_source": "Les Masak",
+    "recipe_price": 1000000,
+    "sell_price": 50000,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 1
+      },
+      {
+        "id": "cabe",
+        "amount": 2
+      },
+      {
+        "id": "sayuran",
+        "amount": 2
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 5
+      },
+      {
+        "id": "bumbu",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "bakso-mahal",
+    "name": "Bakso Mahal",
+    "recipe_source": "Les Masak",
+    "recipe_price": 10000000,
+    "sell_price": 55000,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 2
+      },
+      {
+        "id": "cabe",
+        "amount": 5
+      },
+      {
+        "id": "sayuran",
+        "amount": 2
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 2
+      },
+      {
+        "id": "bumbu",
+        "amount": 2
+      }
+    ]
+  }
+]
