@@ -2,6 +2,10 @@
 
 <p align="center" style="text-align:center"><img src="public/assets/logo192.png" alt="Icon Resep Baksim" style="width:200px;"/></p>
 
+![Powered by ReactJS](https://shields.io/badge/Powered_by-ReactJS-61dafb?logo=react)
+![GitHub deployments](https://img.shields.io/github/deployments/estehbunny/resep-bakso-simulator/Github-Pages?label=GitHub%20Pages%20status)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Visit%20Site-04cc86?logo=github)](https://estehbunny.github.io/resep-bakso-simulator)
+
 Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan dalam game Bakso Simulator. Laman yang dibuat dari repositori ini ditujukan untuk mendukung pengelolaan usaha Bakso dalam game Bakso Simulator dengan menampilkan informasi-informasi berupa:
 
 - Resep bakso
