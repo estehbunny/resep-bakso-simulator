@@ -26,7 +26,7 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 
 ### Daftar Resep Bakso
 
-| Nama             | Bakso | Cabe  | Sayuran | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
+| Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
 | ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: | ----------: | :----------: |
 | Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp15000 |         - | -         |
 | Bakso Pedas      | 2 | 4 | 2 | 2 | 2 |   Lp55000 |  Lp600000 | Les Masak |
@@ -104,7 +104,7 @@ Hal ini tentunya berlaku apabila terdapat perbedaan antara versi mobile dan PC y
       "amount": 1
     },
     {
-      "id": "sayuran",
+      "id": "sayur",
       "amount": 1
     },
     {
@@ -134,7 +134,7 @@ Contoh definisi *array* `recipe` untuk satuan resep bakso adalah sebagai berikut
     "amount": 1
   },
   {
-    "id": "sayuran",
+    "id": "sayur",
     "amount": 1
   },
   {
