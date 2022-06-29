@@ -37,12 +37,12 @@ class IngredientCard extends React.Component {
     const ingredientPrice = ResepHelper.displayPrice(
       (this.item.price / this.item.amountPerPack) * this.item.amount
     )
-    const caption = `${this.item.id} (${this.item.amount}x, ${ingredientPrice})`
+    const caption = `${this.item.name} (${this.item.amount}x, ${ingredientPrice})`
     return (
       <div className='table--cell card card-ingredient'>
         <img
           src={`${process.env.PUBLIC_URL}/assets/item/${this.item.id}.png`}
-          alt={this.item.id}
+          alt={this.item.name}
           title={caption}
         ></img>
         <div className='card card-ingredient-info'>{ingredientPrice}</div>
