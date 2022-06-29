@@ -6,14 +6,13 @@ import RecipeList from './components/RecipeList'
 import VersionInfo from './components/VersionInfo'
 
 import ResepBakso from './scripts/ResepBakso'
-import BahanBakso from './data/bahan.json'
 import GameVersion from './data/gameVersion.json'
 
 const SiteArtwork = () => {
   return (
     <div className='footer-fanart'>
       <img
-        src='assets/bakso-simulator-fanart-mangkok.png'
+        src={`${process.env.PUBLIC_URL}/assets/bakso-simulator-fanart-mangkok.png`}
         alt='Fanart mangkok bakso simulator'
       />
     </div>
@@ -52,12 +51,12 @@ const RecipesSection = (props) => {
   )
 }
 
-const IngredientsSection = () => {
+const IngredientsSection = (props) => {
   return (
     <section id='ingredients-section'>
       <h3>Daftar Bahan</h3>
       <div id='ingredient' className='assorted-bigcard'>
-        {BahanBakso.map((element) => {
+        {props.ingredients.map((element) => {
           return <BigIngredientCard item={element} key={element.id} />
         })}
       </div>
@@ -140,8 +139,8 @@ class App extends React.Component {
         <SiteHeader />
         <main>
           {this.generatePlatformSection()}
-          <IngredientsSection/>
-          <RecipesSection recipes={this.state.helperObject.getAll()}/>
+          <IngredientsSection ingredients={this.state.helperObject.getAllIngredients()}/>
+          <RecipesSection recipes={this.state.helperObject.getAllRecipes()}/>
         </main>
         <SiteFooter />
       </div>

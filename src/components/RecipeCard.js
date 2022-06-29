@@ -1,6 +1,5 @@
 import React from 'react'
 
-import ResepBakso from '../scripts/ResepBakso'
 import ResepHelper from '../scripts/ResepHelper'
 
 class MenuCard extends React.Component {
@@ -18,10 +17,11 @@ class MenuCard extends React.Component {
     const caption = `${this.menu.name} - ${ResepHelper.displayPrice(
       this.menu.sellPrice
     )}`
+    const capitalizedImageFileName = this.capitalizeHyphens(this.menu.id)
     return (
       <div className='table--cell card card-recipe'>
         <img
-          src={`./assets/bakso/${this.capitalizeHyphens(this.menu.id)}.png`}
+          src={`${process.env.PUBLIC_URL}/assets/bakso/${capitalizedImageFileName}.png`}
           alt={caption}
           title={caption}
         ></img>
@@ -35,13 +35,13 @@ class IngredientCard extends React.Component {
   render() {
     this.item = this.props.item
     const ingredientPrice = ResepHelper.displayPrice(
-      ResepBakso.getIngredientPrice(this.item.id, this.item.amount)
+      (this.item.price / this.item.amountPerPack) * this.item.amount
     )
     const caption = `${this.item.id} (${this.item.amount}x, ${ingredientPrice})`
     return (
       <div className='table--cell card card-ingredient'>
         <img
-          src={`./assets/item/${this.item.id}.png`}
+          src={`${process.env.PUBLIC_URL}/assets/item/${this.item.id}.png`}
           alt={this.item.id}
           title={caption}
         ></img>
@@ -61,7 +61,9 @@ class RecipeCard extends React.Component {
     if (!item.recipeSource || item.recipeSource === '-') {
       return `Tersedia sejak awal game`
     }
-    return `${ResepHelper.displayPrice(item.recipePrice)} - ${item.recipeSource}`
+    return `${ResepHelper.displayPrice(item.recipePrice)} - ${
+      item.recipeSource
+    }`
   }
 
   getBasePrice() {
@@ -77,15 +79,17 @@ class RecipeCard extends React.Component {
           <div className='table--row table--row__top'>
             <MenuCard menu={item} key={item.id} />
             <TableCell type='follow' />
-            {item.recipe.map((element) => {
-              return <IngredientCard item={element} key={element.id} />
+            {item.recipe.map((ingredient) => {
+              return <IngredientCard item={ingredient} key={ingredient.id} />
             })}
           </div>
           <div className='table--row table--row__bottom'>
             <TableCell>{this.getSellPrice()}</TableCell>
             <TableCell />
-            {item.recipe.map((element) => {
-              return <TableCell key={element.id}>{element.amount}</TableCell>
+            {item.recipe.map((ingredient) => {
+              return (
+                <TableCell key={ingredient.id}>{ingredient.amount}</TableCell>
+              )
             })}
           </div>
         </div>

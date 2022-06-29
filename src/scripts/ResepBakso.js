@@ -2,17 +2,19 @@ import Bakso from '../data/bakso.json'
 import Bahan from '../data/bahan.json'
 
 import BaksoMobile from '../data/mobile/bakso.json'
+import BahanMobile from '../data/mobile/bahan.json'
 
 class ResepBakso {
   constructor(isMobile) {
     this.baksoList = isMobile ? BaksoMobile : Bakso
+    this.ingredientList = isMobile ? BahanMobile : Bahan
   }
 
-  static getIngredientPrice(ingredientId, amount) {
-    let ingredient = Bahan.find((element) => {
+  getRequiredIngredientData(ingredientId, amount) {
+    let ingredient = this.ingredientList.find((element) => {
       return element.id === ingredientId
     })
-    return (ingredient.price / ingredient.amount) * amount
+    return {...ingredient, amount: amount, amountPerPack: ingredient.amount}
   }
 
   estimateRecipeCost(baksoId) {
@@ -21,16 +23,23 @@ class ResepBakso {
     })
     let totalPrice = 0
     bakso.recipe.forEach((element) => {
-      totalPrice += ResepBakso.getIngredientPrice(element.id, element.amount)
+      totalPrice += (element.price / element.amountPerPack) * element.amount
     })
     return totalPrice
   }
 
-  getAll() {
+  getAllRecipes() {
     return this.baksoList.map((element) => {
       element.basePrice = this.estimateRecipeCost(element.id)
+      element.recipe = element.recipe.map((recipe) => {
+        return this.getRequiredIngredientData(recipe.id, recipe.amount)
+      })
       return element
     })
+  }
+
+  getAllIngredients() {
+    return this.ingredientList
   }
 }
 

@@ -10,7 +10,7 @@ class BigIngredientCard extends React.Component {
         <div className='card card--cell__border card-ingredient-art'>
           <div className=''>
             <img
-              src={`./assets/item/${this.item.id}.png`}
+              src={`${process.env.PUBLIC_URL}/assets/item/${this.item.id}.png`}
               alt={this.item.name}
             ></img>
           </div>
