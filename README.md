@@ -33,7 +33,7 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 | Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 |  Lp750000 | Les Masak |
 | Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |  Lp900000 | Les Masak |
 | Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |  Lp900000 | Les Masak |
-| Bakso Mahal      | 2 | 5 | 2 | 2 | 2 |   Lp55000 | Lp8000000 | Les Masak |
+| Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp8000000 | Les Masak |
 
 ## Cara Penggunaan Situs
 

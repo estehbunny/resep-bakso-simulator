@@ -149,11 +149,11 @@
     "name": "Bakso Mahal",
     "recipeSource": "Les Masak",
     "recipePrice": 10000000,
-    "sellPrice": 55000,
+    "sellPrice": 100000,
     "recipe": [
       {
         "id": "bakso",
-        "amount": 2
+        "amount": 6
       },
       {
         "id": "cabe",
@@ -161,15 +161,15 @@
       },
       {
         "id": "sayuran",
-        "amount": 2
+        "amount": 5
       },
       {
         "id": "mie-bihun",
-        "amount": 2
+        "amount": 5
       },
       {
         "id": "bumbu",
-        "amount": 2
+        "amount": 5
       }
     ]
   }
