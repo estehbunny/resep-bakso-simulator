@@ -17,23 +17,15 @@ class ResepBakso {
     return {...ingredient, amount: amount, amountPerPack: ingredient.amount}
   }
 
-  estimateRecipeCost(baksoId) {
-    let bakso = this.baksoList.find((element) => {
-      return element.id === baksoId
-    })
-    let totalPrice = 0
-    bakso.recipe.forEach((element) => {
-      totalPrice += (element.price / element.amountPerPack) * element.amount
-    })
-    return totalPrice
-  }
-
   getAllRecipes() {
     return this.baksoList.map((element) => {
-      element.basePrice = this.estimateRecipeCost(element.id)
+      let totalIngredientPrice = 0
       element.recipe = element.recipe.map((recipe) => {
-        return this.getRequiredIngredientData(recipe.id, recipe.amount)
+        let ingredientData = this.getRequiredIngredientData(recipe.id, recipe.amount)
+        totalIngredientPrice += (ingredientData.price / ingredientData.amountPerPack) * ingredientData.amount
+        return ingredientData
       })
+      element.basePrice = totalIngredientPrice
       return element
     })
   }
