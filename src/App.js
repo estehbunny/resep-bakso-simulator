@@ -8,6 +8,8 @@ import VersionInfo from './components/VersionInfo'
 import ResepBakso from './scripts/ResepBakso'
 import GameVersion from './data/gameVersion.json'
 
+import ViewInGitHubBadge from './images/view-in-github.svg'
+
 const SiteArtwork = () => {
   return (
     <div className='footer-fanart'>
@@ -31,10 +33,21 @@ const CopyrightInfo = () => {
   )
 }
 
+const SourceInformation = () => {
+  return (
+    <div className='source-info'>
+      <a href='https://github.com/estehbunny/resep-bakso-simulator'>
+        <img src={ViewInGitHubBadge} alt='View in GitHub' height='24' />
+      </a>
+    </div>
+  )
+}
+
 const SiteHeader = () => {
   return (
     <header className='App-header'>
       <h1>Resep Bakso Simulator</h1>
+      <SourceInformation />
       <p>Selamat datang di Resep Bakso Simulator 👋</p>
     </header>
   )
@@ -139,8 +152,10 @@ class App extends React.Component {
         <SiteHeader />
         <main>
           {this.generatePlatformSection()}
-          <IngredientsSection ingredients={this.state.helperObject.getAllIngredients()}/>
-          <RecipesSection recipes={this.state.helperObject.getAllRecipes()}/>
+          <IngredientsSection
+            ingredients={this.state.helperObject.getAllIngredients()}
+          />
+          <RecipesSection recipes={this.state.helperObject.getAllRecipes()} />
         </main>
         <SiteFooter />
       </div>

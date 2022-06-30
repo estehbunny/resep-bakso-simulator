@@ -126,6 +126,16 @@ body {
 .footer-fanart>img {
   max-height: 420px;
   max-width: 80%;
+  margin: .5em auto 1em;
+}
+
+.source-info {
+  margin: .5rem auto;
+}
+
+.source-info img {
+  margin: 0rem .2em;
+  height: 1.5rem;
 }
 
 .hidden-radio {
@@ -143,7 +153,7 @@ body {
 
 footer {
   font-size: 1.2em;
-  margin: 3rem auto 1rem;
+  margin: 2rem auto 1rem;
 }
 
 @media screen and (max-width: 899px) {
@@ -260,6 +270,11 @@ footer {
 
   .footer-fanart>img {
     max-width: 320px;
+  }
+
+  .source-info img {
+    margin: 0rem .2em;
+    height: 2em;
   }
 }
 
