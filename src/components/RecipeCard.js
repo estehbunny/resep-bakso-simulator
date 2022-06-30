@@ -61,9 +61,7 @@ class RecipeCard extends React.Component {
     if (!item.recipeSource || item.recipeSource === '-') {
       return `Tersedia sejak awal game`
     }
-    return `${ResepHelper.displayPrice(item.recipePrice)} - ${
-      item.recipeSource
-    }`
+    return `${ResepHelper.displayPrice(item.recipePrice)} - ${item.recipeSource}`
   }
 
   getBasePrice() {
@@ -73,6 +71,7 @@ class RecipeCard extends React.Component {
 
   render() {
     let item = this.props.item
+    let recipeInfo = `Cara mendapatkan resep: ${this.getRecipePrice()} | Harga bahan: ${this.getBasePrice()}`
     return (
       <div className='table'>
         <div className='table--inner' key={item.id}>
@@ -94,9 +93,7 @@ class RecipeCard extends React.Component {
           </div>
         </div>
         <div className='table--row__info'>
-          <div>
-            {this.getRecipePrice()} | Base Price: {this.getBasePrice()}
-          </div>
+          <div>{recipeInfo}</div>
         </div>
       </div>
     )
