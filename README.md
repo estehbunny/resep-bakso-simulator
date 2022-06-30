@@ -80,7 +80,7 @@ Dikarenakan perilisan *update* Bakso Simulator tidak dirilis secara bersamaan un
 
 Aturan tersebut berlaku apabila Bakso Simulator sudah dirilis terlebih dahulu untuk platform tertentu (misalnya Steam), namun belum tersedia untuk platform lainnya. Untuk menangani masalah tersebut, pengguna dapat memilih platform untuk menampilkan daftar resep sesuai rilisan Bakso Simulator yang tersedia pada platform yang dimainkan.
 
-Hal ini tentunya berlaku apabila terdapat perbedaan antara versi mobile dan PC yang mengharuskan pengguna mobile untuk mendapatkan resep dengan biaya lebih mahal dibanding pengguna PC atau sebaliknya **_(esTehBunny's hypotesis)_**.
+Hal ini tentunya berlaku apabila terdapat perbedaan antara versi mobile dan PC yang mengharuskan pengguna mobile untuk mendapatkan resep/bahan dengan biaya lebih mahal dibanding pengguna PC atau sebaliknya **_(esTehBunny's hypotesis)_**.
 
 ### Bakso Simulator Mobile vs PC
 
@@ -88,7 +88,7 @@ Hal ini tentunya berlaku apabila terdapat perbedaan antara versi mobile dan PC y
 2. Biaya untuk pembelian beberapa item **lebih murah di PC** dibanding mobile.
 3. Iklan di versi **mobile** untuk mendapatkan item/refill/gacha/saldo gratis & atur waktu.
 4. Refill/restock bahan dibayar dengan **iklan di versi mobile** dan **uang di versi PC**.
-5. *(esTehBunny's hypotesis)*: Biaya resep di PC **lebih murah** dibanding mobile.
+5. Biaya resep & bahan di PC **lebih murah** dibanding mobile.
 
 ### Kartu Bahan
 
@@ -109,8 +109,8 @@ Hal ini tentunya berlaku apabila terdapat perbedaan antara versi mobile dan PC y
 - Harga jual bakso
 - Harga bahan baku untuk satuan resep *(base price)*
 - Harga resep
-  - "tersedia sejak awal game" untuk bakso original
-  - "diperoleh setelah menyelesaika Quest XYZ" untuk resep bakso yang diperoleh dari quest
+  - "Tersedia sejak awal game" untuk bakso original
+  - "Diperoleh setelah menyelesaikan Quest XYZ" untuk resep bakso yang diperoleh dari quest
 - Lokasi untuk menemukan resep (quest/toko resep)
 
 
@@ -233,6 +233,8 @@ In the project directory, you can run:
 >
 > Kijang 1 ganti 🦌, Kijang 2 ganti🦌!
 
-Anda dapat Fork repository ini untuk improvisasi atau beri bintang di laman repository ini untuk anda simpan di daftar favorit anda!
+**PR/Issues are welcomed here!**
+
+Anda dapat buat **issue** apabila ingin menyampaikan masalah/saran/masukan untuk repository ini, **fork** repository ini untuk improvisasi, dan/atau beri bintang di laman repository ini untuk anda simpan di daftar favorit anda!
 
 **See you :wink:** - EsTehBunny (:ice_cube::tropical_drink::rabbit:)
