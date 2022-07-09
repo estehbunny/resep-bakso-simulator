@@ -1,0 +1,311 @@
+body {
+  background-color: #234537;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  font-size: 1.2em;
+  margin: 2rem auto 1rem;
+}
+
+.table {
+  border: 1px solid white;
+  margin: 1.5rem auto;
+  width: fit-content;
+
+  &--inner {
+    display: table;
+  }
+
+  &--row {
+    display: table-row;
+    border: 1px solid white;
+
+    &__info {
+      padding: .5em;
+      font-size: 0.9em;
+    }
+  }
+
+  &__cell {
+    display: table-cell;
+    border: 1px solid white;
+    padding: 0.5em 0rem;
+
+    &--follow {
+      padding: 1rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+.card {
+  width: 8rem;
+  vertical-align: middle;
+
+  &__cell {
+    padding: .5rem 0rem;
+
+    &__border {
+      padding: 0.5rem 0rem;
+      border: 1px solid white;
+    }
+  }
+}
+
+.card-ingredient {
+  width: 4rem;
+
+  >img {
+    height: 5rem;
+    max-width: 5rem;
+    object-fit: contain;
+  }
+
+  &__title {
+    font-size: 1.2em;
+  }
+
+  &-info {
+    font-size: .8em;
+  }
+
+  &__art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10rem;
+    height: 8rem;
+  }
+
+}
+
+.card__recipe {
+  width: 8rem;
+  font-size: 1rem;
+
+  >img {
+    height: 5rem;
+    max-width: 5rem;
+    object-fit: contain;
+  }
+}
+
+.assorted-bigcard {
+  display: inline-flex;
+  margin: 0rem .5rem;
+}
+
+.bigcard {
+  margin: 1rem .5rem;
+  padding: 1rem;
+  border: 1px solid white;
+  box-shadow: .2rem .2rem #99999980;
+  background-color: #305F4B;
+
+  &:hover {
+    box-shadow: .3rem .3rem #99999980;
+    background-color: #3E7A60;
+    margin: .9rem .6rem;
+  }
+
+  &:active,
+  &:checked,
+  &--selected {
+    box-shadow: .2rem .2rem #99999980;
+    border-width: 2px;
+    background-color: #503c50;
+    margin: .9rem .6rem;
+
+    &:hover {
+      background-color: #5f405f;
+    }
+  }
+
+  &--ingredient {
+    display: flex;
+    padding: 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__fanart>img {
+  max-height: 420px;
+  max-width: 80%;
+  margin: .5em auto 1em;
+}
+
+.source-info {
+  margin: .5rem auto;
+
+  & img {
+    margin: 0rem .2em;
+    height: 1.5rem;
+  }
+}
+
+.hidden-radio {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .bigcard {
+    margin: .5rem .5rem;
+    padding: .5rem;
+
+    &:hover,
+    &:active,
+    &:checked,
+    &--selected {
+      margin: .5rem .5rem;
+      padding: .5rem;
+    }
+
+    &--version {
+      font-size: .8em;
+    }
+  }
+
+  .card-ingredient {
+    >img {
+      height: 4em;
+      max-width: 4em;
+      object-fit: contain;
+    }
+
+    &__art {
+      width: 5em;
+      height: 5em;
+      border: 0px;
+    }
+
+    &__art img {
+      max-width: 5em;
+    }
+
+    &__title {
+      font-size: 1em;
+      height: 2.5em;
+    }
+  }
+
+
+  .card {
+    width: 5rem;
+
+    &__cell {
+      padding: .3rem 0rem;
+    }
+
+    &__recipe {
+      font-size: .8em;
+      padding: .3rem;
+
+      >img {
+        max-height: 4.5em;
+      }
+    }
+  }
+
+  .table__cell--follow {
+    padding: .5em;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  body {
+    font-size: .75rem;
+    overflow-x: hidden;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .bigcard {
+    padding: .4rem;
+    margin: .5rem .2rem;
+    border-width: 1px;
+    box-shadow: .2rem .2rem #99999980;
+
+    &:hover,
+    &:active,
+    &:checked,
+    &--selected {
+      padding: .4rem;
+      margin: .5rem .2rem;
+      border-width: 1px;
+      box-shadow: .2rem .2rem #99999980;
+    }
+
+    &--version {
+      font-size: .8em;
+    }
+  }
+
+  .card-ingredient {
+    >#{&}-info {
+      margin: auto;
+    }
+
+    &__art img {
+      max-width: 5em;
+    }
+
+    >img {
+      height: 4em;
+      max-width: 4em;
+      object-fit: contain;
+    }
+  }
+
+  .card {
+    width: 5em;
+  }
+
+  .footer__fanart>img {
+    max-width: 320px;
+  }
+
+  .source-info img {
+    margin: 0rem .2em;
+    height: 2em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    font-size: .6rem;
+  }
+
+  .assorted-bigcard {
+    margin: 0;
+  }
+
+  .bigcard {
+    padding: .4rem;
+    margin: .5rem .1rem;
+    box-shadow: none;
+
+    &:hover,
+    &:active,
+    &:checked,
+    &--selected {
+      padding: .4rem;
+      margin: .5rem .1rem;
+      box-shadow: none;
+    }
+  }
+
+  footer {
+    font-size: 1em;
+  }
+}

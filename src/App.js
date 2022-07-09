@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 
 import BigIngredientCard from './components/BigIngredientCard'
 import RecipeList from './components/RecipeList'
