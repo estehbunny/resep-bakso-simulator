@@ -278,6 +278,10 @@ footer {
     margin: 0rem .2em;
     height: 2em;
   }
+
+  .table__cell--price {
+    font-size: .9em;
+  }
 }
 
 @media screen and (max-width: 479px) {

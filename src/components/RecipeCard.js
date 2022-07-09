@@ -83,11 +83,11 @@ class RecipeCard extends React.Component {
             })}
           </div>
           <div className='table--row table--row__bottom'>
-            <TableCell>{this.getSellPrice()}</TableCell>
+            <TableCell type='price'>{this.getSellPrice()}</TableCell>
             <TableCell />
             {item.recipe.map((ingredient) => {
               return (
-                <TableCell key={ingredient.id}>{ingredient.amount}</TableCell>
+                <TableCell type='amount' key={ingredient.id}>{ingredient.amount}</TableCell>
               )
             })}
           </div>
@@ -103,6 +103,10 @@ class RecipeCard extends React.Component {
 function TableCell(props) {
   if (props.type === 'follow') {
     return <div className='table__cell table__cell--follow'>{`>>`}</div>
+  } else if (props.type === 'price') {
+    return <div className='table__cell table__cell--price'>{props.children}</div>
+  } else if (props.type === 'amount') {
+    return <div className='table__cell table__cell--amount'>{props.children}</div>
   }
   return <div className='table__cell'>{props.children}</div>
 }
