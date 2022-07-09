@@ -19,12 +19,18 @@ body {
 
 .table--row__info {
   padding: .5em;
+  font-size: 0.9em;
 }
 
-.table--cell {
+.table__cell {
   display: table-cell;
   border: 1px solid white;
   padding: 0.5em 0rem;
+}
+
+.table__cell--follow {
+  padding: 1rem;
+  vertical-align: middle;
 }
 
 .table--column {
@@ -37,16 +43,11 @@ body {
   vertical-align: middle;
 }
 
-.cell-follow {
-  padding: 1rem;
-  vertical-align: middle;
-}
-
-.card--cell {
+.card__cell {
   padding: .5rem 0rem;
 }
 
-.card--cell__border {
+.card__cell__border {
   padding: 0.5rem 0rem;
   border: 1px solid white;
 }
@@ -61,7 +62,7 @@ body {
   object-fit: contain;
 }
 
-.card-ingredient-title {
+.card-ingredient__title {
   font-size: 1.2em;
 }
 
@@ -69,7 +70,7 @@ body {
   font-size: .8em;
 }
 
-.card-ingredient-art {
+.card-ingredient__art {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,12 +78,12 @@ body {
   height: 8rem;
 }
 
-.card-recipe {
+.card__recipe {
   width: 8rem;
   font-size: 1rem;
 }
 
-.card-recipe>img {
+.card__recipe>img {
   height: 5rem;
   max-width: 5rem;
   object-fit: contain;
@@ -116,6 +117,10 @@ body {
   margin: .9rem .6rem;
 }
 
+.bigcard--selected:hover {
+  background-color: #5f405f;
+}
+
 .bigcard--ingredient {
   display: flex;
   padding: 0rem;
@@ -123,7 +128,7 @@ body {
   align-items: center;
 }
 
-.footer-fanart>img {
+.footer__fanart>img {
   max-height: 420px;
   max-width: 80%;
   margin: .5em auto 1em;
@@ -156,7 +161,7 @@ footer {
   margin: 2rem auto 1rem;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 959px) {
   body {
     font-size: 1rem;
   }
@@ -174,27 +179,27 @@ footer {
     font-size: .8em;
   }
 
-  .card-ingredient-art {
+  .card-ingredient__art {
     width: 5em;
     height: 5em;
     border: 0px;
   }
 
-  .card-ingredient-art img {
+  .card-ingredient__art img {
     max-width: 5em;
   }
 
-  .card-ingredient-title {
+  .card-ingredient__title {
     font-size: 1em;
     height: 2.5em;
   }
 
-  .card-recipe {
+  .card__recipe {
     font-size: .8em;
     padding: .3rem;
   }
 
-  .card-recipe>img {
+  .card__recipe>img {
     max-height: 4.5em;
   }
 
@@ -204,7 +209,7 @@ footer {
     object-fit: contain;
   }
 
-  .card--cell {
+  .card__cell {
     padding: .3rem 0rem;
   }
 
@@ -212,20 +217,17 @@ footer {
     width: 5rem;
   }
 
-  .cell-follow {
+  .table__cell--follow {
     padding: .5em;
   }
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 639px) {
   body {
-    font-size: .8rem;
-  }
-}
-
-@media screen and (max-width: 579px) {
-  body {
-    font-size: .7rem;
+    font-size: .75rem;
+    overflow-x: hidden;
+    width: fit-content;
+    margin: auto;
   }
 
   .bigcard,
@@ -254,8 +256,8 @@ footer {
     margin: auto;
   }
 
-  .card-ingredient-art img {
-    max-width: 3rem;
+  .card-ingredient__art img {
+    max-width: 5em;
   }
 
   .card-ingredient>img {
@@ -268,7 +270,7 @@ footer {
     width: 5em;
   }
 
-  .footer-fanart>img {
+  .footer__fanart>img {
     max-width: 320px;
   }
 
@@ -281,9 +283,6 @@ footer {
 @media screen and (max-width: 479px) {
   body {
     font-size: .6rem;
-    overflow-x: hidden;
-    width: fit-content;
-    margin: auto;
   }
 
   .assorted-bigcard {

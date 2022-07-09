@@ -7,7 +7,7 @@ class BigIngredientCard extends React.Component {
     this.item = this.props.item
     return (
       <div className='bigcard bigcard--ingredient'>
-        <div className='card card--cell__border card-ingredient-art'>
+        <div className='card card__cell__border card-ingredient__art'>
           <div className=''>
             <img
               src={`${process.env.PUBLIC_URL}/assets/item/${this.item.id}.png`}
@@ -15,10 +15,10 @@ class BigIngredientCard extends React.Component {
             ></img>
           </div>
         </div>
-        <div className='card card--cell'>
-          <div className='card card-ingredient-title'>{this.item.name}</div>
+        <div className='card card__cell'>
+          <div className='card card-ingredient__title'>{this.item.name}</div>
         </div>
-        <div className='card card--cell'>
+        <div className='card card__cell'>
           <div className='card card-ingredient-info'>
             {ResepHelper.displayPrice(this.item.price)}/pack
           </div>
@@ -26,7 +26,7 @@ class BigIngredientCard extends React.Component {
             {ResepHelper.displayPrice(this.item.price / this.item.amount)}/item
           </div>
         </div>
-        <div className='card card--cell'>
+        <div className='card card__cell'>
           <div className='card card-ingredient-info'>
             {this.item.availability}
           </div>

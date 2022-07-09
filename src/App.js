@@ -12,7 +12,7 @@ import ViewInGitHubBadge from './images/view-in-github.svg'
 
 const SiteArtwork = () => {
   return (
-    <div className='footer-fanart'>
+    <div className='footer__fanart'>
       <img
         src={`${process.env.PUBLIC_URL}/assets/bakso-simulator-fanart-mangkok.png`}
         alt='Fanart mangkok bakso simulator'

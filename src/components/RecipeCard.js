@@ -19,7 +19,7 @@ class MenuCard extends React.Component {
     )}`
     const capitalizedImageFileName = this.capitalizeHyphens(this.menu.id)
     return (
-      <div className='table--cell card card-recipe'>
+      <div className='table__cell card card__recipe'>
         <img
           src={`${process.env.PUBLIC_URL}/assets/bakso/${capitalizedImageFileName}.png`}
           alt={caption}
@@ -39,7 +39,7 @@ class IngredientCard extends React.Component {
     )
     const caption = `${this.item.name} (${this.item.amount}x, ${ingredientPrice})`
     return (
-      <div className='table--cell card card-ingredient'>
+      <div className='table__cell card card-ingredient'>
         <img
           src={`${process.env.PUBLIC_URL}/assets/item/${this.item.id}.png`}
           alt={this.item.name}
@@ -102,9 +102,9 @@ class RecipeCard extends React.Component {
 
 function TableCell(props) {
   if (props.type === 'follow') {
-    return <div className='table--cell cell-follow'>{`>>`}</div>
+    return <div className='table__cell table__cell--follow'>{`>>`}</div>
   }
-  return <div className='table--cell'>{props.children}</div>
+  return <div className='table__cell'>{props.children}</div>
 }
 
 export default RecipeCard
