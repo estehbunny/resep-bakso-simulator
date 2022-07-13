@@ -16,7 +16,7 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 
 ## Daftar Bahan & Resep Bakso
 
-> **CATATAN**: daftar bahan & resep bakso berikut ditujukkan untuk game **Bakso Simulator versi terbaru: v0.4**
+> **CATATAN**: daftar bahan & resep bakso berikut ditujukkan untuk game **Bakso Simulator versi terbaru: v0.5.x**
 
 ### Daftar Bahan
 
@@ -24,22 +24,21 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 
 | Bahan         | Isi paket | Harga (per-paket) | Lokasi Pembelian |
 | ------------- | :-------: | ----------------: | :--------------: |
-| Bakso         | 25        |           Lp25000 | Supermarket      |
-| Bumbu Masak   | 25        |           Lp10000 | Supermarket      |
-| Sayur-sayuran | 25        |           Lp15000 | Supermarket      |
-| Cabe          | 25        |           Lp17500 | Supermarket      |
-| Mie dan Bihun | 25        |           Lp12500 | Supermarket      |
+| Bakso         | 25        |           Lp22500 | Supermarket      |
+| Bumbu Masak   | 25        |           Lp11250 | Supermarket      |
+| Sayur-sayuran | 25        |           Lp13125 | Supermarket      |
+| Cabe          | 25        |           Lp15000 | Supermarket      |
+| Mie dan Bihun | 25        |           Lp11250 | Supermarket      |
 
 #### Mobile Version
 
 | Bahan         | Isi paket | Harga (per-paket) | Lokasi Pembelian |
 | ------------- | :-------: | ----------------: | :--------------: |
-| Bakso         | 25        |           Lp15000 | Supermarket      |
-| Bumbu Masak   | 25        |            Lp6000 | Supermarket      |
-| Sayur-sayuran | 25        |            Lp9000 | Supermarket      |
-| Cabe          | 25        |           Lp10500 | Supermarket      |
-| Mie dan Bihun | 25        |            Lp7500 | Supermarket      |
-
+| Bakso         | 25        |           Lp30000 | Supermarket      |
+| Bumbu Masak   | 25        |           Lp15000 | Supermarket      |
+| Sayur-sayuran | 25        |           Lp17500 | Supermarket      |
+| Cabe          | 25        |           Lp20000 | Supermarket      |
+| Mie dan Bihun | 25        |           Lp15000 | Supermarket      |
 
 ### Daftar Resep Bakso
 
@@ -48,10 +47,10 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 | Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
 | ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: | ----------: | :----------: |
 | Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp15000 |         - | -         |
-| Bakso Pedas      | 2 | 4 | 2 | 2 | 2 |   Lp55000 |  Lp600000 | Les Masak |
-| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 |  Lp750000 | Les Masak |
-| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |  Lp900000 | Les Masak |
-| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |  Lp900000 | Les Masak |
+| Bakso Pedas      | 2 | 4 | 2 | 2 | 2 |   Lp55000 |  Lp750000 | Les Masak |
+| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 | Lp1125000 | Les Masak |
+| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |  Lp937500 | Les Masak |
+| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 | Lp1125000 | Les Masak |
 | Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp8000000 | Les Masak |
 
 #### Mobile Version
@@ -62,7 +61,7 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 | Bakso Pedas      | 2 | 4 | 2 | 2 | 2 |   Lp55000 |  Lp1000000 | Les Masak |
 | Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 |  Lp1500000 | Les Masak |
 | Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |  Lp1250000 | Les Masak |
-| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |  Lp1000000 | Les Masak |
+| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |  Lp1500000 | Les Masak |
 | Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp10000000 | Les Masak |
 
 

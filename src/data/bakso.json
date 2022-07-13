@@ -32,7 +32,7 @@
     "id": "bakso-pedas",
     "name": "Bakso Pedas",
     "recipeSource": "Les Masak",
-    "recipePrice": 600000,
+    "recipePrice": 750000,
     "sellPrice": 55000,
     "recipe": [
       {
@@ -61,7 +61,7 @@
     "id": "bakso-bakso",
     "name": "Bakso Bakso",
     "recipeSource": "Les Masak",
-    "recipePrice": 900000,
+    "recipePrice": 1125000,
     "sellPrice": 42500,
     "recipe": [
       {
@@ -90,7 +90,7 @@
     "id": "bakso-vege",
     "name": "Bakso Vegetarian",
     "recipeSource": "Les Masak",
-    "recipePrice": 750000,
+    "recipePrice": 937500,
     "sellPrice": 45000,
     "recipe": [
       {
@@ -119,7 +119,7 @@
     "id": "bakso-mie",
     "name": "Mie Bakso",
     "recipeSource": "Les Masak",
-    "recipePrice": 900000,
+    "recipePrice": 1125000,
     "sellPrice": 50000,
     "recipe": [
       {
