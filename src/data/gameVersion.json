@@ -1,5 +1,5 @@
 {
-  "latestVersion": "0.4",
+  "latestVersion": "0.5",
   "platforms": [
     {
       "id": "steam",
@@ -10,8 +10,8 @@
     {
       "id": "ios",
       "name":"iOS",
-      "version": "0.4.3",
-      "releaseDate": "2022-07-02"
+      "version": "0.5.2",
+      "releaseDate": "2022-07-14"
     },
     {
       "id": "android",
