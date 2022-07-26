@@ -16,11 +16,13 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 
 ## Daftar Bahan & Resep Bakso
 
-> **CATATAN**: daftar bahan & resep bakso berikut ditujukkan untuk game **Bakso Simulator versi terbaru: v0.5.x**
+> **CATATAN**: daftar bahan & resep bakso berikut ditujukkan untuk game **Bakso Simulator versi terbaru: v0.7**
 
 ### Daftar Bahan
 
 #### PC/Steam Version
+
+Bahan Utama:
 
 | Bahan         | Isi paket | Harga (per-paket) | Lokasi Pembelian |
 | ------------- | :-------: | ----------------: | :--------------: |
@@ -30,7 +32,17 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 | Cabe          | 25        |           Lp15000 | Supermarket      |
 | Mie dan Bihun | 25        |           Lp11250 | Supermarket      |
 
+Bahan Tambahan:
+
+| Bahan   | Isi paket | Harga (per-paket) | Lokasi Pembelian   |
+| ------- | :-------: | ----------------: | :----------------: |
+| Tahu    | 25        |           Lp26250 | Toko Bahan Makanan |
+| Micin   | 25        |           Lp10000 | Toko Rahasia       |
+
+
 #### Mobile Version
+
+Bahan Utama:
 
 | Bahan         | Isi paket | Harga (per-paket) | Lokasi Pembelian |
 | ------------- | :-------: | ----------------: | :--------------: |
@@ -40,9 +52,19 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 | Cabe          | 25        |           Lp20000 | Supermarket      |
 | Mie dan Bihun | 25        |           Lp15000 | Supermarket      |
 
+Bahan Tambahan:
+
+| Bahan   | Isi paket | Harga (per-paket) | Lokasi Pembelian   |
+| ------- | :-------: | ----------------: | :----------------: |
+| Tahu    | 25        |           Lp35000 | Toko Bahan Makanan |
+| Micin   | 25        |           Lp10000 | Toko Rahasia       |
+
+
 ### Daftar Resep Bakso
 
 #### PC/Steam Version
+
+Menu Utama:
 
 | Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
 | ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: | ----------: | :----------: |
@@ -53,7 +75,15 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 | Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 | Lp1125000 | Les Masak |
 | Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp8000000 | Les Masak |
 
+Menu Tambahan:
+
+| Nama             | Bakso | Cabe  | Sayur   | Mie & Bihun | Bumbu | Tahu | Harga Jual | Harga Resep | Lokasi Resep |
+| ---------------- | :---: | :---: | :-----: | :---------: | :---: | :--: | ---------: | ----------: | :----------: |
+| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 |  Lp100000 | Lp6000000 | Les Masak |
+
 #### Mobile Version
+
+Menu Utama:
 
 | Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
 | ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: | ----------: | :----------: |
@@ -64,6 +94,11 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 | Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |  Lp1500000 | Les Masak |
 | Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp10000000 | Les Masak |
 
+Menu Tambahan:
+
+| Nama             | Bakso | Cabe  | Sayur   | Mie & Bihun | Bumbu | Tahu | Harga Jual | Harga Resep | Lokasi Resep |
+| ---------------- | :---: | :---: | :-----: | :---------: | :---: | :--: | ---------: | ----------: | :----------: |
+| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 |  Lp100000 | Lp8000000 | Les Masak |
 
 ## Cara Penggunaan Situs
 

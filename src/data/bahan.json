@@ -33,5 +33,19 @@
     "price": 11250,
     "amount": 25,
     "availability": "Supermarket"
+  },
+  {
+    "id": "tahu",
+    "name": "Tahu",
+    "price": 26250,
+    "amount": 25,
+    "availability": "Toko Bahan Makanan"
+  },
+  {
+    "id": "micin",
+    "name": "Micin",
+    "price": 30000,
+    "amount": 25,
+    "availability": "Toko Rahasia"
   }
 ]

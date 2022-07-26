@@ -172,5 +172,38 @@
         "amount": 5
       }
     ]
+  },
+  {
+    "id": "bakso-tahu",
+    "name": "Bakso Tahu",
+    "recipeSource": "Les Masak",
+    "recipePrice": 8000000,
+    "sellPrice": 80000,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 1
+      },
+      {
+        "id": "cabe",
+        "amount": 1
+      },
+      {
+        "id": "sayur",
+        "amount": 1
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 1
+      },
+      {
+        "id": "bumbu",
+        "amount": 2
+      },
+      {
+        "id": "tahu",
+        "amount": 5
+      }
+    ]
   }
 ]
