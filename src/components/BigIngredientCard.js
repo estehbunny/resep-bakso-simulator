@@ -16,18 +16,18 @@ class BigIngredientCard extends React.Component {
           </div>
         </div>
         <div className='card card__cell'>
-          <div className='card card-ingredient__title'>{this.item.name}</div>
+          <div className='card-ingredient__title'>{this.item.name}</div>
         </div>
         <div className='card card__cell'>
-          <div className='card card-ingredient-info'>
+          <div className='card-ingredient-info'>
             {ResepHelper.displayPrice(this.item.price)}/pack
           </div>
-          <div className='card card-ingredient-info'>
+          <div className='card-ingredient-info'>
             {ResepHelper.displayPrice(this.item.price / this.item.amount)}/item
           </div>
         </div>
         <div className='card card__cell'>
-          <div className='card card-ingredient-info'>
+          <div className='card-ingredient-info'>
             {this.item.availability}
           </div>
         </div>

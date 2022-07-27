@@ -45,7 +45,7 @@ class IngredientCard extends React.Component {
           alt={this.item.name}
           title={caption}
         ></img>
-        <div className='card card-ingredient-info'>{ingredientPrice}</div>
+        <div className='card__price card-ingredient-info'>{ingredientPrice}</div>
       </div>
     )
   }

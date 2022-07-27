@@ -13,6 +13,10 @@ footer {
   margin: 2rem auto 1rem;
 }
 
+#recipe {
+  padding: 0rem 1em;
+}
+
 .table {
   border: 1px solid white;
   margin: 1.5rem auto;
@@ -48,6 +52,10 @@ footer {
   width: 8rem;
   vertical-align: middle;
 
+  &__price {
+    width: 8rem;
+  }
+
   &__cell {
     padding: .5rem 0rem;
 
@@ -69,6 +77,9 @@ footer {
 
   &__title {
     font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &-info {
@@ -97,12 +108,19 @@ footer {
 }
 
 .assorted-bigcard {
-  display: inline-flex;
-  margin: 0rem .5rem;
+  display: flex;
+  margin: auto .5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &#ingredient {
+    margin: auto;
+    max-width: 60em;
+  }
 }
 
 .bigcard {
-  margin: 1rem .5rem;
+  margin: 1rem .5em;
   padding: 1rem;
   border: 1px solid white;
   box-shadow: .2rem .2rem #99999980;
@@ -132,6 +150,7 @@ footer {
     padding: 0rem;
     flex-direction: column;
     align-items: center;
+    flex-basis: 10em;
   }
 }
 
@@ -159,6 +178,10 @@ footer {
     font-size: 1rem;
   }
 
+  .assorted-bigcard#ingredient {
+    max-width: 45em;
+  }
+
   .bigcard {
     margin: .5rem .5rem;
     padding: .5rem;
@@ -173,6 +196,10 @@ footer {
 
     &--version {
       font-size: .8em;
+    }
+
+    &--ingredient {
+      flex-basis: 6em;
     }
   }
 
@@ -203,6 +230,11 @@ footer {
   .card {
     width: 5rem;
 
+    &__price {
+      width: 5em;
+      margin: auto;
+    }
+
     &__cell {
       padding: .3rem 0rem;
     }
@@ -222,7 +254,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 679px) {
   body {
     font-size: .75rem;
     overflow-x: hidden;
@@ -252,10 +284,6 @@ footer {
   }
 
   .card-ingredient {
-    >#{&}-info {
-      margin: auto;
-    }
-
     &__art img {
       max-width: 5em;
     }
@@ -285,7 +313,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 499px) {
   body {
     font-size: .6rem;
   }
@@ -294,8 +322,12 @@ footer {
     margin: 0;
   }
 
+  .assorted-bigcard#ingredient {
+    max-width: 40em;
+  }
+
   .bigcard {
-    padding: .4rem;
+    padding: .4em;
     margin: .5rem .1rem;
     box-shadow: none;
 
