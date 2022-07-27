@@ -129,7 +129,7 @@ footer {
   &:hover {
     box-shadow: .3rem .3rem #99999980;
     background-color: #3E7A60;
-    margin: .9rem .6rem;
+    margin: .9rem .6em;
   }
 
   &:active,
@@ -138,7 +138,7 @@ footer {
     box-shadow: .2rem .2rem #99999980;
     border-width: 2px;
     background-color: #503c50;
-    margin: .9rem .6rem;
+    margin: .9rem .6em;
 
     &:hover {
       background-color: #5f405f;
@@ -327,7 +327,7 @@ footer {
   }
 
   .bigcard {
-    padding: .4em;
+    padding: .4rem;
     margin: .5rem .1rem;
     box-shadow: none;
 
@@ -339,6 +339,10 @@ footer {
       margin: .5rem .1rem;
       box-shadow: none;
     }
+  }
+
+  #ingredient .bigcard {
+    padding: .4em;
   }
 
   footer {
