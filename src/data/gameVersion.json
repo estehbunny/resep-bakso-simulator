@@ -1,23 +1,23 @@
 {
-  "latestVersion": "0.7",
+  "latestVersion": "0.7.2",
   "platforms": [
     {
       "id": "steam",
       "name": "Steam (PC)",
-      "version": "0.7",
-      "releaseDate": "2022-07-24"
+      "version": "0.7.2",
+      "releaseDate": "2022-07-26"
     },
     {
       "id": "ios",
       "name":"iOS",
-      "version": "0.7",
-      "releaseDate": "2022-07-25"
+      "version": "0.7.1",
+      "releaseDate": "2022-07-26"
     },
     {
       "id": "android",
       "name": "Android",
-      "version": "0.7",
-      "releaseDate": "2022-07-25"
+      "version": "0.7.1",
+      "releaseDate": "2022-07-26"
     }
   ]
 }
