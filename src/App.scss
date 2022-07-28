@@ -52,8 +52,16 @@ footer {
   width: 8rem;
   vertical-align: middle;
 
+  &--instant-price {
+    width: 100%;
+  }
+
   &__price {
     width: 8rem;
+  }
+
+  &__title {
+    margin-bottom: .5em;
   }
 
   &__cell {
@@ -80,6 +88,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
   }
 
   &-info {
@@ -230,6 +239,12 @@ footer {
   .card {
     width: 5rem;
 
+    &--instant-price {
+      width: 100%;
+      margin: .5em 0rem;
+      border: 0;
+    }
+
     &__price {
       width: 5em;
       margin: auto;
@@ -297,6 +312,11 @@ footer {
 
   .card {
     width: 5em;
+
+    &--instant-price {
+      width: 100%;
+      margin: .5em 0rem;
+    }
   }
 
   .footer__fanart>img {

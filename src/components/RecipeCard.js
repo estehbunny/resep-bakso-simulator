@@ -37,6 +37,18 @@ class IngredientCard extends React.Component {
     const ingredientPrice = ResepHelper.displayPrice(
       (this.item.price / this.item.amountPerPack) * this.item.amount
     )
+    let ingredientInstantPrice = ingredientPrice
+    if (this.item.instantBuy) {
+      let instantBuyInfo = this.item.instantBuy
+      ingredientInstantPrice = ResepHelper.displayPrice(
+        (instantBuyInfo.price / instantBuyInfo.amount) * this.item.amount
+      )
+    }
+    let displayPrice = this.props.instantBuy ? (
+      <strong>{ingredientInstantPrice}</strong>
+    ) : (
+      ingredientPrice
+    )
     const caption = `${this.item.name} (${this.item.amount}x, ${ingredientPrice})`
     return (
       <div className='table__cell card card-ingredient'>
@@ -45,7 +57,7 @@ class IngredientCard extends React.Component {
           alt={this.item.name}
           title={caption}
         ></img>
-        <div className='card__price card-ingredient-info'>{ingredientPrice}</div>
+        <div className='card__price card-ingredient-info'>{displayPrice}</div>
       </div>
     )
   }
@@ -61,17 +73,35 @@ class RecipeCard extends React.Component {
     if (!item.recipeSource || item.recipeSource === '-') {
       return `Tersedia sejak awal game`
     }
-    return `${ResepHelper.displayPrice(item.recipePrice)} - ${item.recipeSource}`
+    return `${ResepHelper.displayPrice(item.recipePrice)} - ${
+      item.recipeSource
+    }`
   }
 
   getBasePrice() {
     let item = this.props.item
-    return `Lp${item.basePrice.toLocaleString('id')}`
+    if (this.props.instantBuy) {
+      return <strong>Lp{item.baseInstantPrice.toLocaleString('id')}</strong>
+    }
+    return <span>Lp{item.basePrice.toLocaleString('id')}</span>
   }
 
   render() {
     let item = this.props.item
-    let recipeInfo = `Cara mendapatkan resep: ${this.getRecipePrice()} | Harga bahan: ${this.getBasePrice()}`
+    let recipeInfo = (
+      <div>
+        Cara mendapatkan resep: {this.getRecipePrice()} | Harga bahan:{' '}
+        {this.getBasePrice()}
+      </div>
+    )
+    let recipeNote
+    if (item.note) {
+      recipeNote = (
+        <div>
+          <strong>Note:</strong> {item.note}
+        </div>
+      )
+    }
     return (
       <div className='table'>
         <div className='table--inner' key={item.id}>
@@ -79,7 +109,13 @@ class RecipeCard extends React.Component {
             <MenuCard menu={item} key={item.id} />
             <TableCell type='follow' />
             {item.recipe.map((ingredient) => {
-              return <IngredientCard item={ingredient} key={ingredient.id} />
+              return (
+                <IngredientCard
+                  item={ingredient}
+                  key={ingredient.id}
+                  instantBuy={this.props.instantBuy}
+                />
+              )
             })}
           </div>
           <div className='table--row table--row__bottom'>
@@ -87,13 +123,16 @@ class RecipeCard extends React.Component {
             <TableCell />
             {item.recipe.map((ingredient) => {
               return (
-                <TableCell type='amount' key={ingredient.id}>{ingredient.amount}</TableCell>
+                <TableCell type='amount' key={ingredient.id}>
+                  {ingredient.amount}
+                </TableCell>
               )
             })}
           </div>
         </div>
         <div className='table--row__info'>
           <div>{recipeInfo}</div>
+          {recipeNote}
         </div>
       </div>
     )
@@ -104,9 +143,13 @@ function TableCell(props) {
   if (props.type === 'follow') {
     return <div className='table__cell table__cell--follow'>{`>>`}</div>
   } else if (props.type === 'price') {
-    return <div className='table__cell table__cell--price'>{props.children}</div>
+    return (
+      <div className='table__cell table__cell--price'>{props.children}</div>
+    )
   } else if (props.type === 'amount') {
-    return <div className='table__cell table__cell--amount'>{props.children}</div>
+    return (
+      <div className='table__cell table__cell--amount'>{props.children}</div>
+    )
   }
   return <div className='table__cell'>{props.children}</div>
 }

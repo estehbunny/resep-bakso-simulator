@@ -53,14 +53,66 @@ const SiteHeader = () => {
   )
 }
 
-const RecipesSection = (props) => {
+class RecipesSection extends React.Component {
+  state = {instantBuy: false}
+
+  toggleInstantBuy(instantBuy) {
+    console.log(instantBuy)
+    this.setState({instantBuy: instantBuy})
+  }
+
+  render() {
+    return (
+      <section id='recipes-section'>
+        <h3>Daftar Menu</h3>
+        <div id='purchase-option' className='assorted-bigcard'>
+          <RecipeIngredientPurchaseOption
+            onChangePurchaseOption={() => this.toggleInstantBuy(false)}
+            selected={!this.state.instantBuy}
+            instantBuy={false}
+            label='normal buy'
+          />
+          <RecipeIngredientPurchaseOption
+            onChangePurchaseOption={() => this.toggleInstantBuy(true)}
+            selected={this.state.instantBuy}
+            instantBuy={true}
+            label='instant buy'
+          />
+        </div>
+        <p>
+          <strong>Note:</strong> Price written in <strong>bold</strong> are <u>instant buy/restock fee</u> through tablet
+        </p>
+        <div id='recipe'>
+          <RecipeList
+            recipes={this.props.recipes}
+            instantBuy={this.state.instantBuy}
+          />
+        </div>
+      </section>
+    )
+  }
+}
+
+const RecipeIngredientPurchaseOption = (props) => {
   return (
-    <section id='recipes-section'>
-      <h3>Daftar Menu</h3>
-      <div id='recipe'>
-        <RecipeList recipes={props.recipes} />
-      </div>
-    </section>
+    <div>
+      <input
+        id={props.label}
+        type='radio'
+        name='recipeInstantPurchase'
+        value={props.instantBuy}
+        onChange={props.onChangePurchaseOption}
+        defaultChecked={props.selected}
+        className='hidden-radio'
+      />
+      <label htmlFor={props.label}>
+        <div className={`bigcard ${props.selected ? 'bigcard--selected' : ''}`}>
+          <div>
+            {props.instantBuy ? 'Instant Buy via Tablet' : 'Normal Price'}
+          </div>
+        </div>
+      </label>
+    </div>
   )
 }
 

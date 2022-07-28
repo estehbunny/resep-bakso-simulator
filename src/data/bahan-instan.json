@@ -1,0 +1,27 @@
+[
+  {
+    "id": "bakso",
+    "cost": 45000,
+    "amount": 25
+  },
+  {
+    "id": "sayur",
+    "cost": 25000,
+    "amount": 25
+  },
+  {
+    "id": "bumbu",
+    "cost": 18000,
+    "amount": 25
+  },
+  {
+    "id": "cabe",
+    "cost": 28000,
+    "amount": 25
+  },
+  {
+    "id": "mie-bihun",
+    "cost": 21000,
+    "amount": 25
+  }
+]
