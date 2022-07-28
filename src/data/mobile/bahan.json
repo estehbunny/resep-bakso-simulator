@@ -4,48 +4,55 @@
     "name": "Bakso",
     "price": 30000,
     "amount": 25,
-    "availability": "Supermarket"
+    "availability": "Supermarket",
+    "essential": true
   },
   {
     "id": "bumbu",
     "name": "Bumbu Masak",
     "price": 15000,
     "amount": 25,
-    "availability": "Supermarket"
+    "availability": "Supermarket",
+    "essential": true
   },
   {
     "id": "sayur",
     "name": "Sayur-sayuran",
     "price": 17500,
     "amount": 25,
-    "availability": "Supermarket"
+    "availability": "Supermarket",
+    "essential": true
   },
   {
     "id": "cabe",
     "name": "Cabe",
     "price": 20000,
     "amount": 25,
-    "availability": "Supermarket"
+    "availability": "Supermarket",
+    "essential": true
   },
   {
     "id": "mie-bihun",
     "name": "Mie dan Bihun",
     "price": 15000,
     "amount": 25,
-    "availability": "Supermarket"
+    "availability": "Supermarket",
+    "essential": true
   },
   {
     "id": "tahu",
     "name": "Tahu",
     "price": 35000,
     "amount": 25,
-    "availability": "Toko Bahan Makanan"
+    "availability": "Toko Bahan Makanan",
+    "essential": false
   },
   {
     "id": "micin",
     "name": "Micin",
     "price": 40000,
     "amount": 25,
-    "availability": "Toko Rahasia"
+    "availability": "Toko Rahasia",
+    "essential": false
   }
 ]

@@ -68,11 +68,11 @@ Menu Utama:
 
 | Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
 | ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: | ----------: | :----------: |
-| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp15000 |         - | -         |
-| Bakso Pedas      | 2 | 4 | 2 | 2 | 2 |   Lp55000 |  Lp750000 | Les Masak |
-| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 | Lp1125000 | Les Masak |
-| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |  Lp937500 | Les Masak |
-| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 | Lp1125000 | Les Masak |
+| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp20000 |         - | -         |
+| Bakso Pedas      | 2 | 4 | 1 | 1 | 4 |   Lp55000 | Lp4125000 | Les Masak |
+| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 | Lp3187500 | Les Masak |
+| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 | Lp3375000 | Les Masak |
+| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 | Lp3750000 | Les Masak |
 | Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp8000000 | Les Masak |
 
 Menu Tambahan:
@@ -87,11 +87,11 @@ Menu Utama:
 
 | Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
 | ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: | ----------: | :----------: |
-| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp15000 |         - | -         |
-| Bakso Pedas      | 2 | 4 | 2 | 2 | 2 |   Lp55000 |  Lp1000000 | Les Masak |
-| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 |  Lp1500000 | Les Masak |
-| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |  Lp1250000 | Les Masak |
-| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |  Lp1500000 | Les Masak |
+| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp20000 |         - | -         |
+| Bakso Pedas      | 2 | 4 | 1 | 1 | 4 |   Lp55000 |  Lp5500000 | Les Masak |
+| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 |  Lp4250000 | Les Masak |
+| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |  Lp4500000 | Les Masak |
+| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |  Lp5000000 | Les Masak |
 | Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp10000000 | Les Masak |
 
 Menu Tambahan:

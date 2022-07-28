@@ -4,7 +4,8 @@
     "name": "Bakso Original",
     "recipeSource": "-",
     "recipePrice": 0,
-    "sellPrice": 15000,
+    "sellPrice": 20000,
+    "note": "sell price added each part/chapter completion",
     "recipe": [
       {
         "id": "bakso",
@@ -32,7 +33,7 @@
     "id": "bakso-pedas",
     "name": "Bakso Pedas",
     "recipeSource": "Les Masak",
-    "recipePrice": 1000000,
+    "recipePrice": 5500000,
     "sellPrice": 55000,
     "recipe": [
       {
@@ -45,15 +46,15 @@
       },
       {
         "id": "sayur",
-        "amount": 2
+        "amount": 1
       },
       {
         "id": "mie-bihun",
-        "amount": 2
+        "amount": 1
       },
       {
         "id": "bumbu",
-        "amount": 2
+        "amount": 4
       }
     ]
   },
@@ -61,7 +62,7 @@
     "id": "bakso-bakso",
     "name": "Bakso Bakso",
     "recipeSource": "Les Masak",
-    "recipePrice": 1500000,
+    "recipePrice": 4250000,
     "sellPrice": 42500,
     "recipe": [
       {
@@ -90,7 +91,7 @@
     "id": "bakso-vege",
     "name": "Bakso Vegetarian",
     "recipeSource": "Les Masak",
-    "recipePrice": 1250000,
+    "recipePrice": 4500000,
     "sellPrice": 45000,
     "recipe": [
       {
@@ -119,7 +120,7 @@
     "id": "bakso-mie",
     "name": "Mie Bakso",
     "recipeSource": "Les Masak",
-    "recipePrice": 1000000,
+    "recipePrice": 5000000,
     "sellPrice": 50000,
     "recipe": [
       {
