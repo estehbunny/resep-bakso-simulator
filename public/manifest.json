@@ -1,6 +1,7 @@
 {
   "short_name": "Resep Bakso Simulator",
   "name": "Resep Bakso Simulator",
+  "description": "Resep Bakso Simulator alternatif via microsite. Tersedia informasi resep bakso, harga & lokasi pembelian bahan bakso/resep bakso. Atur & cek harga bahan/resep dengan platform Bakso Simulator yang anda mainkan!",
   "icons": [
     {
       "src": "favicon.ico",
