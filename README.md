@@ -20,85 +20,56 @@ Repositori ini dibuat untuk menampilkan resep dan bahan bakso yang diperlukan da
 
 ### Daftar Bahan
 
-#### PC/Steam Version
-
 Bahan Utama:
 
-| Bahan         | Isi paket | Harga (per-paket) | Lokasi Pembelian |
-| ------------- | :-------: | ----------------: | :--------------: |
-| Bakso         | 25        |           Lp22500 | Supermarket      |
-| Bumbu Masak   | 25        |           Lp11250 | Supermarket      |
-| Sayur-sayuran | 25        |           Lp13125 | Supermarket      |
-| Cabe          | 25        |           Lp15000 | Supermarket      |
-| Mie dan Bihun | 25        |           Lp11250 | Supermarket      |
+| Bahan         | Isi paket | Harga (Steam) | Harga (Mobile) | Beli Instan | Lokasi Pembelian |
+| ------------- | :-------: | ------------: | -------------: | ----------: | :--------------: |
+| Bakso         | 25        |       Lp22500 |        Lp30000 |     Lp45000 | Supermarket      |
+| Bumbu Masak   | 25        |       Lp11250 |        Lp15000 |     Lp18000 | Supermarket      |
+| Sayur-sayuran | 25        |       Lp13125 |        Lp17500 |     Lp25000 | Supermarket      |
+| Cabe          | 25        |       Lp15000 |        Lp20000 |     Lp28000 | Supermarket      |
+| Mie dan Bihun | 25        |       Lp11250 |        Lp15000 |     Lp21000 | Supermarket      |
 
 Bahan Tambahan:
 
-| Bahan   | Isi paket | Harga (per-paket) | Lokasi Pembelian   |
-| ------- | :-------: | ----------------: | :----------------: |
-| Tahu    | 25        |           Lp26250 | Toko Bahan Makanan |
-| Micin   | 25        |           Lp10000 | Toko Rahasia       |
-
-
-#### Mobile Version
-
-Bahan Utama:
-
-| Bahan         | Isi paket | Harga (per-paket) | Lokasi Pembelian |
-| ------------- | :-------: | ----------------: | :--------------: |
-| Bakso         | 25        |           Lp30000 | Supermarket      |
-| Bumbu Masak   | 25        |           Lp15000 | Supermarket      |
-| Sayur-sayuran | 25        |           Lp17500 | Supermarket      |
-| Cabe          | 25        |           Lp20000 | Supermarket      |
-| Mie dan Bihun | 25        |           Lp15000 | Supermarket      |
-
-Bahan Tambahan:
-
-| Bahan   | Isi paket | Harga (per-paket) | Lokasi Pembelian   |
-| ------- | :-------: | ----------------: | :----------------: |
-| Tahu    | 25        |           Lp35000 | Toko Bahan Makanan |
-| Micin   | 25        |           Lp10000 | Toko Rahasia       |
+| Bahan   | Isi paket | Harga (Steam) | Harga (Steam) | Lokasi Pembelian   |
+| ------- | :-------: | ------------: | ------------: | :----------------: |
+| Tahu    | 25        |       Lp26250 |       Lp35000 | Toko Bahan Makanan |
+| Micin   | 25        |       Lp10000 |       Lp10000 | Toko Rahasia       |
 
 
 ### Daftar Resep Bakso
 
-#### PC/Steam Version
+#### Info Resep Bakso
 
-Menu Utama:
+| Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual |
+| ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: |
+| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp20000 |
+| Bakso Pedas      | 2 | 4 | 1 | 1 | 4 |   Lp55000 |
+| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 |
+| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |
+| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |
+| Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 |
 
-| Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
-| ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: | ----------: | :----------: |
-| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp20000 |         - | -         |
-| Bakso Pedas      | 2 | 4 | 1 | 1 | 4 |   Lp55000 | Lp4125000 | Les Masak |
-| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 | Lp3187500 | Les Masak |
-| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 | Lp3375000 | Les Masak |
-| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 | Lp3750000 | Les Masak |
-| Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp8000000 | Les Masak |
+| Nama             | Bakso | Cabe  | Sayur   | Mie & Bihun | Bumbu | Tahu | Harga Jual |
+| ---------------- | :---: | :---: | :-----: | :---------: | :---: | :--: | ---------: |
+| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 |  Lp80000 |
 
-Menu Tambahan:
+#### Harga beli resep
 
-| Nama             | Bakso | Cabe  | Sayur   | Mie & Bihun | Bumbu | Tahu | Harga Jual | Harga Resep | Lokasi Resep |
-| ---------------- | :---: | :---: | :-----: | :---------: | :---: | :--: | ---------: | ----------: | :----------: |
-| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 |  Lp100000 | Lp6000000 | Les Masak |
+| Nama             | Harga Resep (PC) | Harga Resep (Mobile) | Lokasi Resep |
+| ---------------- | ---------: | ----------: | :----------: |
+| Bakso Original   |          - | - |-         |
+| Bakso Pedas      |  Lp4125000 | Lp5500000 | Les Masak |
+| Bakso Bakso      |  Lp3187500 | Lp4250000 | Les Masak |
+| Bakso Vegetarian |  Lp3375000 | Lp4500000 | Les Masak |
+| Mie Bakso        |  Lp3750000 | Lp5000000 | Les Masak |
+| Bakso Mahal      |  Lp8000000 | Lp10000000 | Les Masak |
 
-#### Mobile Version
+| Nama             | Harga Resep (PC) | Harga Resep (Mobile) | Lokasi Resep |
+| ---------------- |  ---------: | ----------: | :----------: |
+| Bakso Tahu       | Lp6000000 | Lp8000000 | Les Masak |
 
-Menu Utama:
-
-| Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual | Harga Resep | Lokasi Resep |
-| ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: | ----------: | :----------: |
-| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp20000 |         - | -         |
-| Bakso Pedas      | 2 | 4 | 1 | 1 | 4 |   Lp55000 |  Lp5500000 | Les Masak |
-| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 |  Lp4250000 | Les Masak |
-| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |  Lp4500000 | Les Masak |
-| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |  Lp5000000 | Les Masak |
-| Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 | Lp10000000 | Les Masak |
-
-Menu Tambahan:
-
-| Nama             | Bakso | Cabe  | Sayur   | Mie & Bihun | Bumbu | Tahu | Harga Jual | Harga Resep | Lokasi Resep |
-| ---------------- | :---: | :---: | :-----: | :---------: | :---: | :--: | ---------: | ----------: | :----------: |
-| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 |  Lp100000 | Lp8000000 | Les Masak |
 
 ## Cara Penggunaan Situs
 
@@ -121,8 +92,7 @@ Hal ini tentunya berlaku apabila terdapat perbedaan antara versi mobile dan PC y
 1. **_In-App Purchases_**: hanya tersedia di mobile
 2. Biaya untuk pembelian beberapa item **lebih murah di PC** dibanding mobile.
 3. Iklan di versi **mobile** untuk mendapatkan item/refill/gacha/saldo gratis & atur waktu.
-4. Refill/restock bahan dibayar dengan **iklan di versi mobile** dan **uang di versi PC**.
-5. Biaya resep & bahan di PC **lebih murah** dibanding mobile.
+4. Biaya resep & bahan di PC **lebih murah** dibanding mobile.
 
 ### Kartu Bahan
 
