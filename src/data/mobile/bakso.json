@@ -5,7 +5,6 @@
     "recipeSource": "-",
     "recipePrice": 0,
     "sellPrice": 20000,
-    "note": "Harga bakso original +5000 setiap penyelesaian bagian chapter",
     "recipe": [
       {
         "id": "bakso",
