@@ -80,7 +80,7 @@ class RecipesSection extends React.Component {
           />
         </div>
         <p>
-          <strong>Note:</strong> Price written in <strong>bold</strong> are <u>instant buy/restock fee</u> through tablet
+          <strong>Catatan:</strong> Harga yang dicetak <strong>tebal</strong> adalah <u>harga pembelian instan</u> melalui tablet
         </p>
         <div id='recipe'>
           <RecipeList
@@ -94,6 +94,8 @@ class RecipesSection extends React.Component {
 }
 
 const RecipeIngredientPurchaseOption = (props) => {
+  const instantBuyText = 'Pembelian Instan via Tablet'
+  const normalBuyText = 'Harga Normal'
   return (
     <div>
       <input
@@ -108,7 +110,7 @@ const RecipeIngredientPurchaseOption = (props) => {
       <label htmlFor={props.label}>
         <div className={`bigcard ${props.selected ? 'bigcard--selected' : ''}`}>
           <div>
-            {props.instantBuy ? 'Instant Buy via Tablet' : 'Normal Price'}
+            {props.instantBuy ? instantBuyText : normalBuyText}
           </div>
         </div>
       </label>
