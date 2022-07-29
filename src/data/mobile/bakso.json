@@ -5,7 +5,6 @@
     "recipeSource": "-",
     "recipePrice": 0,
     "sellPrice": 20000,
-    "note": "sell price added each part/chapter completion",
     "recipe": [
       {
         "id": "bakso",
