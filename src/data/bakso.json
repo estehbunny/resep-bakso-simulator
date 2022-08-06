@@ -4,7 +4,7 @@
     "name": "Bakso Original",
     "recipeSource": "-",
     "recipePrice": 0,
-    "sellPrice": 20000,
+    "sellPrice": 25000,
     "recipe": [
       {
         "id": "bakso",
@@ -33,7 +33,7 @@
     "name": "Bakso Pedas",
     "recipeSource": "Les Masak",
     "recipePrice": 4125000,
-    "sellPrice": 55000,
+    "sellPrice": 60000,
     "recipe": [
       {
         "id": "bakso",
@@ -62,7 +62,7 @@
     "name": "Bakso Bakso",
     "recipeSource": "Les Masak",
     "recipePrice": 3187500,
-    "sellPrice": 42500,
+    "sellPrice": 45000,
     "recipe": [
       {
         "id": "bakso",
@@ -91,7 +91,7 @@
     "name": "Bakso Vegetarian",
     "recipeSource": "Les Masak",
     "recipePrice": 3375000,
-    "sellPrice": 45000,
+    "sellPrice": 50000,
     "recipe": [
       {
         "id": "bakso",
@@ -120,7 +120,7 @@
     "name": "Mie Bakso",
     "recipeSource": "Les Masak",
     "recipePrice": 3750000,
-    "sellPrice": 50000,
+    "sellPrice": 55000,
     "recipe": [
       {
         "id": "bakso",
@@ -149,7 +149,7 @@
     "name": "Bakso Mahal",
     "recipeSource": "Les Masak",
     "recipePrice": 8000000,
-    "sellPrice": 100000,
+    "sellPrice": 200000,
     "recipe": [
       {
         "id": "bakso",
@@ -178,7 +178,7 @@
     "name": "Bakso Tahu",
     "recipeSource": "Les Masak",
     "recipePrice": 6000000,
-    "sellPrice": 80000,
+    "sellPrice": 85000,
     "recipe": [
       {
         "id": "bakso",

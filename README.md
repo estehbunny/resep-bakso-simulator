@@ -44,16 +44,16 @@ Bahan Tambahan:
 
 | Nama             | Bakso | Cabe  | Sayur | Mie & Bihun | Bumbu | Harga Jual |
 | ---------------- | :---: | :---: | :-----: | :---------: | :---: | ---------: |
-| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp20000 |
-| Bakso Pedas      | 2 | 4 | 1 | 1 | 4 |   Lp55000 |
-| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp42500 |
-| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp45000 |
-| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp50000 |
-| Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp100000 |
+| Bakso Original   | 2 | 1 | 1 | 1 | 1 |   Lp25000 |
+| Bakso Pedas      | 2 | 4 | 1 | 1 | 4 |   Lp60000 |
+| Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp45000 |
+| Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp50000 |
+| Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp55000 |
+| Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp200000 |
 
 | Nama             | Bakso | Cabe  | Sayur   | Mie & Bihun | Bumbu | Tahu | Harga Jual |
 | ---------------- | :---: | :---: | :-----: | :---------: | :---: | :--: | ---------: |
-| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 |  Lp80000 |
+| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 |  Lp85000 |
 
 #### Harga beli resep
 
@@ -128,7 +128,7 @@ Hal ini tentunya berlaku apabila terdapat perbedaan antara versi mobile dan PC y
   "name": "Bakso Original",
   "recipeSource": "-",
   "recipePrice": 0,
-  "sellPrice": 15000,
+  "sellPrice": 25000,
   "recipe": [
     {
       "id": "bakso",
@@ -189,7 +189,7 @@ Contoh definisi *array* `recipe` untuk satuan resep bakso adalah sebagai berikut
 {
   "id": "bakso",
   "name": "Bakso",
-  "price": 25000,
+  "price": 30000,
   "amount": 25,
   "availability": "Supermarket"
 }
