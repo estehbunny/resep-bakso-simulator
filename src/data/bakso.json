@@ -153,7 +153,7 @@
     "recipe": [
       {
         "id": "bakso",
-        "amount": 6
+        "amount": 5
       },
       {
         "id": "cabe",
@@ -170,6 +170,10 @@
       {
         "id": "bumbu",
         "amount": 5
+      },
+      {
+        "id": "micin",
+        "amount": 1
       }
     ]
   },
@@ -203,6 +207,76 @@
       {
         "id": "tahu",
         "amount": 5
+      }
+    ]
+  },
+  {
+    "id": "bakso-spesial",
+    "name": "Bakso Spesial",
+    "recipeSource": "Les Masak",
+    "recipePrice": 18750000,
+    "sellPrice": 2.001,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 2
+      },
+      {
+        "id": "cabe",
+        "amount": 1
+      },
+      {
+        "id": "sayur",
+        "amount": 2
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 2
+      },
+      {
+        "id": "bumbu",
+        "amount": 1
+      },
+      {
+        "id": "tahu",
+        "amount": 1
+      },
+      {
+        "id": "micin",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "bakso-sultan",
+    "name": "Bakso Sultan",
+    "recipeSource": "Les Masak",
+    "recipePrice": 37500000,
+    "sellPrice": 400000,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 9
+      },
+      {
+        "id": "cabe",
+        "amount": 9
+      },
+      {
+        "id": "sayur",
+        "amount": 9
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 9
+      },
+      {
+        "id": "bumbu",
+        "amount": 9
+      },
+      {
+        "id": "micin",
+        "amount": 2
       }
     ]
   }

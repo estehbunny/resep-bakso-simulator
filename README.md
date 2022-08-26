@@ -49,11 +49,13 @@ Bahan Tambahan:
 | Bakso Bakso      | 6 | 0 | 0 | 0 | 0 |   Lp45000 |
 | Bakso Vegetarian | 0 | 2 | 6 | 1 | 2 |   Lp50000 |
 | Mie Bakso        | 1 | 2 | 2 | 5 | 2 |   Lp55000 |
-| Bakso Mahal      | 6 | 5 | 5 | 5 | 5 |  Lp200000 |
 
-| Nama             | Bakso | Cabe  | Sayur   | Mie & Bihun | Bumbu | Tahu | Harga Jual |
-| ---------------- | :---: | :---: | :-----: | :---------: | :---: | :--: | ---------: |
-| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 |  Lp85000 |
+| Nama             | Bakso | Cabe  | Sayur   | Mie & Bihun | Bumbu | Tahu | Micin | Harga Jual |
+| ---------------- | :---: | :---: | :-----: | :---------: | :---: | :--: | :---: | ---------: |
+| Bakso Tahu       | 1 | 1 | 1 | 1 | 2 | 5 | - |   Lp85000 |
+| Bakso Mahal      | 5 | 5 | 5 | 5 | 5 | - | 1 |  Lp200000 |
+| Bakso Spesial    | 2 | 1 | 2 | 2 | 1 | 1 | 2 |       Sp2 |
+| Bakso Sultan     | 9 | 9 | 9 | 9 | 9 | - | 2 |  Lp400000 |
 
 #### Harga beli resep
 
@@ -64,11 +66,10 @@ Bahan Tambahan:
 | Bakso Bakso      |  Lp3187500 | Lp4250000 | Les Masak |
 | Bakso Vegetarian |  Lp3375000 | Lp4500000 | Les Masak |
 | Mie Bakso        |  Lp3750000 | Lp5000000 | Les Masak |
+| Bakso Tahu       |  Lp6000000 | Lp8000000 | Les Masak |
 | Bakso Mahal      |  Lp8000000 | Lp10000000 | Les Masak |
-
-| Nama             | Harga Resep (PC) | Harga Resep (Mobile) | Lokasi Resep |
-| ---------------- |  ---------: | ----------: | :----------: |
-| Bakso Tahu       | Lp6000000 | Lp8000000 | Les Masak |
+| Bakso Spesial    | Lp18750000 | Lp25000000 | Les Masak |
+| Bakso Sultan     | Lp37500000 | Lp50000000 | Les Masak |
 
 
 ## Cara Penggunaan Situs
