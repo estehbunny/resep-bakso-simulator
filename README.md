@@ -56,6 +56,7 @@ Bahan Tambahan:
 | Bakso Mahal      | 5 | 5 | 5 | 5 | 5 | - | 1 |  Lp200000 |
 | Bakso Spesial    | 2 | 1 | 2 | 2 | 1 | 1 | 2 |       Sp2 |
 | Bakso Sultan     | 9 | 9 | 9 | 9 | 9 | - | 2 |  Lp400000 |
+| Bakso Horror     | 6 | 6 | 6 | 6 | 6 | - | - |  Lp166666 |
 
 #### Harga beli resep
 
@@ -70,6 +71,7 @@ Bahan Tambahan:
 | Bakso Mahal      |  Lp8000000 | Lp10000000 | Les Masak |
 | Bakso Spesial    | Lp18750000 | Lp25000000 | Les Masak |
 | Bakso Sultan     | Lp37500000 | Lp50000000 | Les Masak |
+| Bakso Horror     |   Lp666666 |   Lp666666 | Rumah Angker (quest pocong merah) |
 
 
 ## Cara Penggunaan Situs

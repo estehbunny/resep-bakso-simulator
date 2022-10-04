@@ -279,5 +279,34 @@
         "amount": 2
       }
     ]
+  },
+  {
+    "id": "bakso-horror",
+    "name": "Bakso Horror",
+    "recipeSource": "Rumah Angker (quest pocong merah)",
+    "recipePrice": 666666,
+    "sellPrice": 166666,
+    "recipe": [
+      {
+        "id": "bakso",
+        "amount": 6
+      },
+      {
+        "id": "cabe",
+        "amount": 6
+      },
+      {
+        "id": "sayur",
+        "amount": 6
+      },
+      {
+        "id": "mie-bihun",
+        "amount": 6
+      },
+      {
+        "id": "bumbu",
+        "amount": 6
+      }
+    ]
   }
 ]
