@@ -44,7 +44,7 @@ class IngredientCard extends React.Component {
         (instantBuyInfo.price / instantBuyInfo.amount) * this.item.amount
       )
     }
-    let displayPrice = this.props.instantBuy ? (
+    let displayPrice = this.props.instantBuy && this.item.instantBuy ? (
       <strong>{ingredientInstantPrice}</strong>
     ) : (
       ingredientPrice
@@ -66,6 +66,11 @@ class IngredientCard extends React.Component {
 class RecipeCard extends React.Component {
   getSellPrice() {
     return ResepHelper.displayPrice(this.props.item.sellPrice)
+  }
+
+  getOnlineOrderSellPrice() {
+    let onlineOrderPrice = this.props.item.sellPrice * 1.5
+    return ResepHelper.displayPrice(onlineOrderPrice)
   }
 
   getRecipePrice() {
@@ -119,7 +124,10 @@ class RecipeCard extends React.Component {
             })}
           </div>
           <div className='table--row table--row__bottom'>
-            <TableCell type='price'>{this.getSellPrice()}</TableCell>
+            <TableCell type='price'>
+              <div>{this.getSellPrice()}</div>
+              <div className='table__cell--price-alt'>({this.getOnlineOrderSellPrice()})</div>
+            </TableCell>
             <TableCell />
             {item.recipe.map((ingredient) => {
               return (

@@ -177,6 +177,17 @@ footer {
   display: none;
 }
 
+.table__cell--price-alt {
+    font-style: italic;
+    font-weight: bold;
+    font-size: .75em;
+}
+
+.table__cell--amount {
+  margin: auto;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 959px) {
   body {
     font-size: 1rem;
