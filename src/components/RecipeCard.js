@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ResepHelper from '../scripts/ResepHelper'
+import ResepBakso from '../scripts/ResepBakso'
 
 class MenuCard extends React.Component {
   capitalizeHyphens(string) {
@@ -35,13 +36,13 @@ class IngredientCard extends React.Component {
   render() {
     this.item = this.props.item
     const ingredientPrice = ResepHelper.displayPrice(
-      (this.item.price / this.item.amountPerPack) * this.item.amount
+      ResepBakso.getPricePerAmount(this.item, this.item.requiredAmount)
     )
     let ingredientInstantPrice = ingredientPrice
     if (this.item.instantBuy) {
       let instantBuyInfo = this.item.instantBuy
       ingredientInstantPrice = ResepHelper.displayPrice(
-        (instantBuyInfo.price / instantBuyInfo.amount) * this.item.amount
+        ResepBakso.getPricePerAmount(instantBuyInfo, this.item.requiredAmount)
       )
     }
     let displayPrice = this.props.instantBuy && this.item.instantBuy ? (
@@ -132,7 +133,7 @@ class RecipeCard extends React.Component {
             {item.recipe.map((ingredient) => {
               return (
                 <TableCell type='amount' key={ingredient.id}>
-                  {ingredient.amount}
+                  {ingredient.requiredAmount}
                 </TableCell>
               )
             })}

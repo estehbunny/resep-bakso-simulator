@@ -143,10 +143,11 @@ const SiteFooter = () => {
 class App extends React.Component {
   constructor(props) {
     super(props)
+    let helperObject = new ResepBakso(false)
     this.state = {
       selectedPlatform: 'steam',
       isMobile: false,
-      helperObject: new ResepBakso(false)
+      helperObject: helperObject,
     }
   }
 
@@ -160,7 +161,7 @@ class App extends React.Component {
     this.setState({
       selectedPlatform: platform,
       isMobile: isMobile[platform],
-      helperObject: helperObject
+      helperObject: helperObject,
     })
   }
 

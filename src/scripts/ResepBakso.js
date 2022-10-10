@@ -12,7 +12,7 @@ class ResepBakso {
     this.ingredientList = isMobile ? BahanMobile : Bahan
   }
 
-  getRequiredIngredientData(ingredientId, amount) {
+  getRequiredIngredientData(ingredientId, requiredAmount) {
     let ingredient = this.ingredientList.find((element) => {
       return element.id === ingredientId
     })
@@ -28,39 +28,45 @@ class ResepBakso {
     }
     return {
       ...ingredient,
-      amount: amount,
-      amountPerPack: ingredient.amount,
+      requiredAmount: requiredAmount,
       instantBuy: instantBuyInfo
     }
   }
 
+  getRecipeInformation(menu) {
+    let totalIngredientPrice = 0
+    let totalInstantBuyIngredientPrice = 0
+    let menuInfo = {...menu}
+    menuInfo.recipe = menu.recipe.map((recipe) => {
+      let ingredientData = this.getRequiredIngredientData(
+        recipe.id,
+        recipe.amount
+      )
+      totalIngredientPrice += ResepBakso.getPricePerAmount(
+        ingredientData,
+        ingredientData.requiredAmount
+      )
+      if (ingredientData.instantBuy) {
+        totalInstantBuyIngredientPrice += ResepBakso.getPricePerAmount(
+          ingredientData.instantBuy,
+          ingredientData.requiredAmount
+        )
+      } else {
+        totalInstantBuyIngredientPrice += ResepBakso.getPricePerAmount(
+          ingredientData,
+          ingredientData.requiredAmount
+        )
+      }
+      return ingredientData
+    })
+    menuInfo.basePrice = totalIngredientPrice
+    menuInfo.baseInstantPrice = totalInstantBuyIngredientPrice
+    return menuInfo
+  }
+
   getAllRecipes() {
     return this.baksoList.map((element) => {
-      let totalIngredientPrice = 0
-      let totalInstantBuyIngredientPrice = 0
-      element.recipe = element.recipe.map((recipe) => {
-        let ingredientData = this.getRequiredIngredientData(
-          recipe.id,
-          recipe.amount
-        )
-        totalIngredientPrice +=
-          (ingredientData.price / ingredientData.amountPerPack) *
-          ingredientData.amount
-        if (ingredientData.instantBuy) {
-          totalInstantBuyIngredientPrice +=
-            (ingredientData.instantBuy.price /
-              ingredientData.instantBuy.amount) *
-            ingredientData.amount
-        } else {
-          totalInstantBuyIngredientPrice +=
-            (ingredientData.price / ingredientData.amountPerPack) *
-            ingredientData.amount
-        }
-        return ingredientData
-      })
-      element.basePrice = totalIngredientPrice
-      element.baseInstantPrice = totalInstantBuyIngredientPrice
-      return element
+      return this.getRecipeInformation(element)
     })
   }
 
@@ -78,6 +84,10 @@ class ResepBakso {
       }
       return {...ingredient, instantBuy: instantBuyInfo}
     })
+  }
+
+  static getPricePerAmount(ingredientData, requiredAmount) {
+    return (ingredientData.price / ingredientData.amount) * requiredAmount
   }
 }
 
