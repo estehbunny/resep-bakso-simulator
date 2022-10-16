@@ -70,7 +70,7 @@ class RecipeCard extends React.Component {
   }
 
   getOnlineOrderSellPrice() {
-    let onlineOrderPrice = this.props.item.sellPrice * 1.5
+    let onlineOrderPrice = this.props.item.sellPrice * 1.75
     return ResepHelper.displayPrice(onlineOrderPrice)
   }
 

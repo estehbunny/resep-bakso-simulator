@@ -4,20 +4,20 @@
     {
       "id": "steam",
       "name": "Steam (PC)",
-      "version": "1.6",
-      "releaseDate": "2022-10-02"
+      "version": "1.7",
+      "releaseDate": "2022-10-08"
     },
     {
       "id": "ios",
       "name":"iOS",
-      "version": "1.6",
-      "releaseDate": "2022-10-02"
+      "version": "1.7",
+      "releaseDate": "2022-10-09"
     },
     {
       "id": "android",
       "name": "Android",
-      "version": "1.6",
-      "releaseDate": "2022-10-02"
+      "version": "1.7",
+      "releaseDate": "2022-10-08"
     }
   ]
 }
