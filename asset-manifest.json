@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/resep-bakso-simulator/static/css/main.614ddb27.css",
-    "main.js": "/resep-bakso-simulator/static/js/main.9f5fb4c4.js",
+    "main.js": "/resep-bakso-simulator/static/js/main.52842da4.js",
     "static/js/787.9c357cc1.chunk.js": "/resep-bakso-simulator/static/js/787.9c357cc1.chunk.js",
     "static/media/view-in-github.svg": "/resep-bakso-simulator/static/media/view-in-github.6d78934bb44b1fafaa4ecb5e515c9b77.svg",
     "index.html": "/resep-bakso-simulator/index.html",
     "main.614ddb27.css.map": "/resep-bakso-simulator/static/css/main.614ddb27.css.map",
-    "main.9f5fb4c4.js.map": "/resep-bakso-simulator/static/js/main.9f5fb4c4.js.map",
+    "main.52842da4.js.map": "/resep-bakso-simulator/static/js/main.52842da4.js.map",
     "787.9c357cc1.chunk.js.map": "/resep-bakso-simulator/static/js/787.9c357cc1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.614ddb27.css",
-    "static/js/main.9f5fb4c4.js"
+    "static/js/main.52842da4.js"
   ]
 }
